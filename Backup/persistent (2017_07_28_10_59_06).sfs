@@ -194,7 +194,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 14031531.91851335
+		update = 14031822.918506846
 		version = 1.3.0
 		WEIGHTS
 		{
@@ -364,6 +364,7 @@ GAME
 					completedMessage = 
 					completeInSequence = True
 					duration = 0
+					trackedVessel = a82a7e1f-db49-4c53-8d67-a87abd9576fd
 					dissassociateVesselsOnContractFailure = True
 					dissassociateVesselsOnContractCompletion = False
 					PARAM
@@ -396,6 +397,20 @@ GAME
 							state = Complete
 							strength = STRONG
 							completionTime = 13952867.037308194
+						}
+						VESSEL_STATS
+						{
+							vessel = ace4462b-8f0d-478f-951d-e644f0792109
+							state = Complete
+							strength = WEAK
+							completionTime = 14031639.818510938
+						}
+						VESSEL_STATS
+						{
+							vessel = 1538614d-d9b4-437e-8d76-8eb983299f6b
+							state = Complete
+							strength = STRONG
+							completionTime = 14031708.078509413
 						}
 						DOCKED_SUB_VESSEL
 						{
@@ -695,7 +710,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Unmanned
-							state = Incomplete
+							state = Failed
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = STGUnmannedMissions.First Return from Orbit
@@ -708,7 +723,7 @@ GAME
 					{
 						name = OrbitParameter
 						id = Orbit
-						state = Complete
+						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = STGUnmannedMissions.First Return from Orbit
@@ -7076,7 +7091,7 @@ GAME
 				}
 				Escape
 				{
-					completedUnmanned = 12073998.698520198
+					completed = 12073998.698520198
 				}
 				Landing
 				{
@@ -7164,7 +7179,7 @@ GAME
 				}
 				Flyby
 				{
-					completedUnmanned = 12073998.698520198
+					completed = 12073998.698520198
 				}
 			}
 		}
@@ -8773,6 +8788,46 @@ GAME
 			sci = 16.7266884
 			cap = 48
 		}
+		Science
+		{
+			id = mobileMaterialsLab@MinmusInSpaceHigh
+			title = Materials Study while in space high over Minmus
+			dsc = 1
+			scv = 1
+			sbv = 1
+			sci = 0
+			cap = 32
+		}
+		Science
+		{
+			id = temperatureScan@MinmusInSpaceHigh
+			title = Temperature Scan while in space high over Minmus
+			dsc = 1
+			scv = 1
+			sbv = 1
+			sci = 0
+			cap = 8
+		}
+		Science
+		{
+			id = evaReport@MinmusInSpaceHigh
+			title = EVA Report while in space high over Minmus
+			dsc = 1
+			scv = 1
+			sbv = 1
+			sci = 0
+			cap = 8
+		}
+		Science
+		{
+			id = crewReport@MinmusInSpaceHigh
+			title = Crew Report while in space high over Minmus
+			dsc = 1
+			scv = 1
+			sbv = 1
+			sci = 0
+			cap = 5
+		}
 	}
 	SCENARIO
 	{
@@ -10209,6 +10264,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = STGUnmannedMissions.Targeted Impact
 						title = Unmanned
 						notes = 
 						completedMessage = 
@@ -10238,6 +10294,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = STGUnmannedMissions.Targeted Impact
 						title = Destination: Minmus
 						notes = 
 						completedMessage = 
@@ -10249,6 +10306,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = STGUnmannedMissions.Targeted Impact
 						title = Altitude: Between 0 m and 75,000 m
 						notes = 
 						completedMessage = 
@@ -10260,6 +10318,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = STGUnmannedMissions.Targeted Impact
 						title = Speed: Between 250 m/s and 5,000 m/s
 						notes = 
 						completedMessage = 
@@ -10380,18 +10439,6 @@ GAME
 				dissassociateVesselsOnContractCompletion = True
 				PARAM
 				{
-					name = ParameterDelegate`1
-					id = Duration: 30 days
-					optional = True
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Duration: 30 days
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
 					name = NewVessel
 					id = NewVessel
 					state = Incomplete
@@ -10429,6 +10476,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_PolarRelay_Tier1
 						title = Resource Capacity: ElectricCharge: At least 900 units
 						notes = 
 						completedMessage = 
@@ -10474,6 +10522,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_PolarRelay_Tier1
 						title = With module: SAS
 						notes = 
 						completedMessage = 
@@ -10484,6 +10533,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_PolarRelay_Tier1
 						title = Count: At least 1 
 						notes = 
 						completedMessage = 
@@ -10515,6 +10565,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_PolarRelay_Tier1
 						title = With module: Command
 						notes = 
 						completedMessage = 
@@ -10525,6 +10576,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_PolarRelay_Tier1
 						title = Count: At least 1 
 						notes = 
 						completedMessage = 
@@ -10570,6 +10622,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_PolarRelay_Tier1
 						title = Resource: ElectricCharge: At least 90 units
 						notes = 
 						completedMessage = 
@@ -10618,6 +10671,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_PolarRelay_Tier1
 						title = Destination: Kerbin
 						notes = 
 						completedMessage = 
@@ -10629,6 +10683,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_PolarRelay_Tier1
 						title = Reach the specified orbit
 						notes = 
 						completedMessage = 
@@ -10655,6 +10710,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_PolarRelay_Tier1
 						title = Destination: Kerbin
 						notes = 
 						completedMessage = 
@@ -10666,10 +10722,24 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_PolarRelay_Tier1
 						title = Acceleration: Less than 0.2 gees
 						notes = 
 						completedMessage = 
 					}
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Duration: 30 days
+					optional = True
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = StockAntennaBalance.SAB_Homeworld_PolarRelay_Tier1
+					title = Duration: 30 days
+					notes = 
+					completedMessage = 
 				}
 			}
 		}
@@ -10748,7 +10818,7 @@ GAME
 				{
 					shipName = Pistachio ResQ A15
 					shipID = a80edf8d-c838-4d76-b266-d2cc6fd5afa4
-					progress = 116773.1179598888
+					progress = 117073.15795318238
 					buildTime = 135785.12436935061
 					launchSite = LaunchPad
 					flag = ThreePounds/Flags/logo
@@ -12526,7 +12596,7 @@ GAME
 				{
 					shipName = Donut Pyxis A04
 					shipID = e4721957-a521-4af3-baf0-5291a28269d3
-					progress = 88479.008861776674
+					progress = 88569.020859721088
 					buildTime = 204724.99720356602
 					launchSite = LaunchPad
 					flag = ThreePounds/Flags/logo
@@ -15082,7 +15152,7 @@ GAME
 					launchpadID = 0
 					id = SpaceCenter/VehicleAssemblyBuilding
 					commonName = VehicleAssemblyBuilding
-					progress = 5500881.8801134042
+					progress = 5501331.9401033446
 					BP = 10062305.898749053
 					cost = 450000
 					UpgradeProcessed = False
@@ -15095,7 +15165,7 @@ GAME
 					launchpadID = 0
 					id = SpaceCenter/ResearchAndDevelopment
 					commonName = ResearchAndDevelopment
-					progress = 117086.25182809867
+					progress = 117536.31181803904
 					BP = 14246052.084700515
 					cost = 902000
 					UpgradeProcessed = False
@@ -15170,7 +15240,7 @@ GAME
 					ContractAlarmType = Expire
 					Triggered = True
 					Actioned = True
-					AlarmWindowClosed = False
+					AlarmWindowClosed = True
 					Actions
 					{
 						Warp = KillWarp
@@ -19335,12 +19405,61 @@ GAME
 			code = W
 			data = 
 		}
+		ENTRY
+		{
+			time = 14031589.7785121
+			name = Wengar Kerman
+			code = I:Minmus
+			data = 
+		}
+		ENTRY
+		{
+			time = 14031632.3985111
+			name = Wengar Kerman
+			code = E+
+			data = 
+		}
+		ENTRY
+		{
+			time = 14031632.3985111
+			name = Wengar Kerman
+			code = DE
+			data = 
+		}
+		ENTRY
+		{
+			time = 14031632.4785111
+			name = Wengar Kerman
+			code = V1:Minmus
+			data = 
+		}
+		ENTRY
+		{
+			time = 14031639.8185109
+			name = Wengar Kerman
+			code = B+
+			data = 
+		}
+		ENTRY
+		{
+			time = 14031647.5385108
+			name = Wengar Kerman
+			code = E+
+			data = 
+		}
+		ENTRY
+		{
+			time = 14031708.0785094
+			name = Wengar Kerman
+			code = B+
+			data = 
+		}
 	}
 	FLIGHTSTATE
 	{
 		version = 1.3.0
-		UT = 14031532.258513343
-		activeVessel = 0
+		UT = 14031832.298506636
+		activeVessel = 9
 		mapViewFiltering = 7166
 		commNetUIModeTracking = Network
 		commNetUIModeFlight = FirstHop
@@ -25779,13 +25898,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 300021.34364924696
-				ECC = 0.99999999999999989
-				INC = 0.096909914916388687
+				SMA = NaN
+				ECC = 1
+				INC = 0.068213938508498564
 				LPE = 90
-				LAN = 285.4015272534034
-				MNA = 3.1415926207170166
-				EPH = 13953493.037294202
+				LAN = 333.09197633855149
+				MNA = 0
+				EPH = 14031532.278513342
 				REF = 1
 			}
 			PART
@@ -30497,39 +30616,39 @@ GAME
 			pid = a82a7e1fdb494c538d67a87abd9576fd
 			name = Hazelnut MiL C00
 			type = Ship
-			sit = ORBITING
+			sit = ESCAPING
 			landed = False
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 70664.662730291486
+			met = 268721.09518706426
 			lct = 13763111.203319572
-			lastUT = 13833775.886049863
+			lastUT = 14031832.298506636
 			root = 0
-			lat = 0.40630158076012773
-			lon = 91.912357423222161
-			alt = 29968370.930301417
+			lat = -6.6210375238333654
+			lon = -96.650766188002748
+			alt = 2128742.1851137173
 			hgt = -1
-			nrm = 0.271963686,0.00924717262,0.962263346
-			rot = 0.120739415,0.0067147268,0.992611527,0.0099744983
-			CoM = -7.59959221E-07,-3.1760745,-3.35276127E-07
+			nrm = 0.588402092,0.480749935,-0.650124967
+			rot = 0.368956238,-0.318183035,-0.207676739,-0.848234177
+			CoM = -2.38418579E-07,-3.17607689,-9.53674316E-07
 			stg = 1
 			prst = False
 			ref = 0
 			ctrl = True
-			cPch = 
-			cHdg = 
+			cPch = 0.2620002
+			cHdg = 3.562002
 			cMod = 0
 			ORBIT
 			{
-				SMA = 24992009.362663489
-				ECC = 0.9684169012709738
-				INC = 21.674187669765256
-				LPE = 192.54168726430717
-				LAN = 164.93422237902075
-				MNA = 0.86092570468428276
-				EPH = 13833775.866049863
-				REF = 1
+				SMA = -30926.384706436216
+				ECC = 3.8885669371877603
+				INC = 91.579082182097721
+				LPE = 288.50307686219975
+				LAN = 69.662012460754227
+				MNA = -68.05930877123933
+				EPH = 14031832.298506636
+				REF = 3
 			}
 			PART
 			{
@@ -30555,8 +30674,8 @@ GAME
 				attN = top, 1
 				mass = 0.800000012
 				shielded = False
-				temp = 261.10106995722089
-				tempExt = 259.72110048324055
+				temp = 281.4048264260793
+				tempExt = 281.29165065243791
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -30604,7 +30723,7 @@ GAME
 					isEnabled = True
 					actuatorModeCycle = 0
 					authorityLimiter = 100
-					stateString = Running
+					stateString = Idle
 					stagingEnabled = True
 					WheelState = Active
 					EVENTS
@@ -30693,6 +30812,66 @@ GAME
 						{
 							actionGroup = None
 						}
+					}
+					ScienceData
+					{
+						data = 5
+						subjectID = crewReport@MinmusInSpaceHigh
+						xmit = 1
+						xmitBonus = 1
+						title = Crew Report while in space high over Minmus
+						triggered = False
+						container = 681516374
+					}
+					ScienceData
+					{
+						data = 8
+						subjectID = evaReport@MinmusInSpaceHigh
+						xmit = 1
+						xmitBonus = 1
+						title = EVA Report while in space high over Minmus
+						triggered = False
+						container = 681516374
+					}
+					ScienceData
+					{
+						data = 25
+						subjectID = mobileMaterialsLab@MinmusInSpaceHigh
+						xmit = 0.349999994
+						xmitBonus = 1
+						title = Materials Study while in space high over Minmus
+						triggered = False
+						container = 681516374
+					}
+					ScienceData
+					{
+						data = 10
+						subjectID = mysteryGoo@MinmusInSpaceHigh
+						xmit = 0.300000012
+						xmitBonus = 1
+						title = Mystery Goo™ Observation while in space high over Minmus
+						triggered = False
+						container = 681516374
+					}
+					ScienceData
+					{
+						data = 12
+						subjectID = barometerScan@MinmusInSpaceHigh
+						xmit = 0.5
+						xmitBonus = 1
+						title = Atmospheric Pressure Scan while in space high over Minmus
+						triggered = False
+						container = 681516374
+					}
+					ScienceData
+					{
+						data = 8
+						subjectID = temperatureScan@MinmusInSpaceHigh
+						xmit = 0.5
+						xmitBonus = 1
+						title = Temperature Scan while in space high over Minmus
+						triggered = False
+						container = 681516374
 					}
 					UPGRADESAPPLIED
 					{
@@ -30783,6 +30962,8 @@ GAME
 						0 = Flight,Kerbin
 						0 = Suborbit,Kerbin
 						0 = Orbit,Kerbin
+						0 = Flyby,Minmus
+						0 = Escape,Minmus
 					}
 					UPGRADESAPPLIED
 					{
@@ -30834,8 +31015,8 @@ GAME
 				attN = bottom, 0
 				mass = 0.100000001
 				shielded = False
-				temp = 258.87676746934039
-				tempExt = 259.04951382522574
+				temp = 281.12577393882685
+				tempExt = 280.74902987705281
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -30954,8 +31135,8 @@ GAME
 				attN = top, 0
 				mass = 0.100000001
 				shielded = False
-				temp = 259.94594288205894
-				tempExt = 259.0421995269038
+				temp = 281.20547233198118
+				tempExt = 280.75962846544002
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -31119,8 +31300,8 @@ GAME
 				attN = top, 2
 				mass = 0.0500000007
 				shielded = False
-				temp = 256.54132765649973
-				tempExt = 257.07923520833424
+				temp = 280.9292470336984
+				tempExt = 280.31777088141757
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -31230,8 +31411,8 @@ GAME
 				attN = bottom, 5
 				mass = 0.100000001
 				shielded = False
-				temp = 258.92633561403505
-				tempExt = 257.93260021841877
+				temp = 281.13079877784685
+				tempExt = 280.0371892773278
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -31345,8 +31526,8 @@ GAME
 				attN = bottom, 6
 				mass = 0.200000003
 				shielded = False
-				temp = 259.16653263488985
-				tempExt = 258.76143082185297
+				temp = 281.13981928044524
+				tempExt = 280.46324997250736
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -31370,9 +31551,9 @@ GAME
 					name = ModuleAnimateGeneric
 					isEnabled = True
 					aniState = LOCKED
-					animSwitch = True
-					animTime = 0
-					animSpeed = 1
+					animSwitch = False
+					animTime = 0.994812727
+					animSpeed = 0
 					deployPercent = 100
 					animationIsDisabled = False
 					stagingEnabled = True
@@ -31394,8 +31575,8 @@ GAME
 				{
 					name = ModuleScienceExperiment
 					isEnabled = True
-					Deployed = False
-					Inoperable = False
+					Deployed = True
+					Inoperable = True
 					cooldownToGo = 0
 					stagingEnabled = True
 					EVENTS
@@ -31410,6 +31591,7 @@ GAME
 						ResetAction
 						{
 							actionGroup = None
+							active = False
 						}
 					}
 					UPGRADESAPPLIED
@@ -31441,8 +31623,8 @@ GAME
 				attN = bottom, 7
 				mass = 0.200000003
 				shielded = False
-				temp = 259.46784896755184
-				tempExt = 259.36563724187209
+				temp = 281.19468283447117
+				tempExt = 280.67952561593518
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -31537,8 +31719,8 @@ GAME
 				attN = bottom, 8
 				mass = 0.125
 				shielded = False
-				temp = 259.89672225463892
-				tempExt = 259.86012951683517
+				temp = 281.28293929660953
+				tempExt = 280.82199151591107
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -31652,8 +31834,8 @@ GAME
 				attN = bottom, 9
 				mass = 0.25
 				shielded = False
-				temp = 260.30209146016449
-				tempExt = 260.16427611896432
+				temp = 281.341955419199
+				tempExt = 280.89897452209971
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -31767,8 +31949,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.5
 				shielded = False
-				temp = 260.0027374736834
-				tempExt = 260.00545852997953
+				temp = 281.31131529209483
+				tempExt = 280.85538855748575
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -31958,8 +32140,8 @@ GAME
 				srfN = srfAttach, 4
 				mass = 0.0500000007
 				shielded = False
-				temp = 258.18387331611939
-				tempExt = 257.76617381698333
+				temp = 281.02023587150944
+				tempExt = 280.23297117979854
 				tempExtUnexp = 306.73555959672774
 				expt = 0.5
 				state = 0
@@ -31983,9 +32165,9 @@ GAME
 					name = ModuleAnimateGeneric
 					isEnabled = True
 					aniState = LOCKED
-					animSwitch = True
-					animTime = 0
-					animSpeed = 1
+					animSwitch = False
+					animTime = 0.994620085
+					animSpeed = 0
 					deployPercent = 100
 					animationIsDisabled = False
 					stagingEnabled = True
@@ -32007,8 +32189,8 @@ GAME
 				{
 					name = ModuleScienceExperiment
 					isEnabled = True
-					Deployed = False
-					Inoperable = False
+					Deployed = True
+					Inoperable = True
 					cooldownToGo = 0
 					stagingEnabled = True
 					EVENTS
@@ -32023,6 +32205,7 @@ GAME
 						ResetAction
 						{
 							actionGroup = None
+							active = False
 						}
 					}
 					UPGRADESAPPLIED
@@ -32053,8 +32236,8 @@ GAME
 				srfN = srfAttach, 4
 				mass = 0.0500000007
 				shielded = False
-				temp = 258.18387331611939
-				tempExt = 257.76617381698333
+				temp = 281.0143434707079
+				tempExt = 280.23115510398304
 				tempExtUnexp = 306.73555959672774
 				expt = 0.5
 				state = 0
@@ -32149,8 +32332,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.00999999978
 				shielded = False
-				temp = 258.03302663251282
-				tempExt = 257.59630110021106
+				temp = 280.92023366419386
+				tempExt = 280.2148243224932
 				tempExtUnexp = 306.73555959672774
 				expt = 0.5
 				state = 0
@@ -32204,8 +32387,8 @@ GAME
 				srfN = srfAttach, 12
 				mass = 0.00499999989
 				shielded = False
-				temp = 257.91273381998656
-				tempExt = 257.4363896461773
+				temp = 280.89082716753296
+				tempExt = 280.24618613795866
 				tempExtUnexp = 306.73555959672774
 				expt = 0.5
 				state = 0
@@ -32284,8 +32467,8 @@ GAME
 				srfN = srfAttach, 12
 				mass = 0.00499999989
 				shielded = False
-				temp = 257.91273381998656
-				tempExt = 257.4363896461773
+				temp = 280.89082716753296
+				tempExt = 280.24618613795866
 				tempExtUnexp = 306.73555959672774
 				expt = 0.5
 				state = 0
@@ -32363,8 +32546,8 @@ GAME
 				srfN = srfAttach, 12
 				mass = 0.00499999989
 				shielded = False
-				temp = 257.73080582042172
-				tempExt = 257.40596377750444
+				temp = 280.91131608452315
+				tempExt = 280.24555494939227
 				tempExtUnexp = 306.73555959672774
 				expt = 0.5
 				state = 0
@@ -32452,8 +32635,8 @@ GAME
 				srfN = srfAttach, 12
 				mass = 0.00499999989
 				shielded = False
-				temp = 257.61797135008959
-				tempExt = 257.34210508137141
+				temp = 280.88173465177795
+				tempExt = 280.24294962641483
 				tempExtUnexp = 306.73555959672774
 				expt = 0.5
 				state = 0
@@ -32525,7 +32708,7 @@ GAME
 				Gear = False, 0
 				Light = False, 0
 				RCS = False, 0
-				SAS = True, 13763115.4633195
+				SAS = False, 14031632.3985111
 				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
@@ -32549,17 +32732,17 @@ GAME
 			}
 			FLIGHTPLAN
 			{
-			}
-			TARGET
-			{
-				type = CelestialBody
-				tgtId = Minmus
+				MANEUVER
+				{
+					UT = 14040638.500146372
+					dV = 0,0,-170.32165913190744
+				}
 			}
 			CTRLSTATE
 			{
-				pitch = 1.15147304E-05
-				yaw = -7.59137492E-06
-				roll = -3.15894653E-07
+				pitch = 0
+				yaw = 0
+				roll = 0
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
@@ -33276,6 +33459,10 @@ GAME
 				1 = Flight,Kerbin
 				1 = Suborbit,Kerbin
 				1 = Orbit,Kerbin
+				1 = Flyby,Minmus
+				1 = Escape,Minmus
+				1 = ExitVessel,Minmus
+				1 = BoardVessel,Minmus
 			}
 		}
 		KERBAL
