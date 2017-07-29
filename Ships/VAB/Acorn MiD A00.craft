@@ -2,7 +2,7 @@ ship = Acorn MiD A00
 version = 1.3.0
 description = 
 type = VAB
-size = 4.25228691,12.3334522,2.14242649
+size = 4.25228834,12.3334522,2.14242697
 PART
 {
 	part = mk1pod_4294483896
@@ -289,7 +289,7 @@ PART
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 1
+	sqor = 0
 	sepI = -1
 	attm = 0
 	modCost = 0
@@ -312,7 +312,7 @@ PART
 		persistentState = STOWED
 		animTime = 0
 		minAirPressureToOpen = 0.0399999991
-		deployAltitude = 1000
+		deployAltitude = 750
 		spreadAngle = 7
 		automateSafeDeploy = 0
 		stagingEnabled = True
@@ -399,7 +399,7 @@ PART
 	dstg = 1
 	sidx = -1
 	sqor = -1
-	sepI = -1
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -528,7 +528,7 @@ PART
 	RESOURCE
 	{
 		name = Ablator
-		amount = 200
+		amount = 40.000000596046448
 		maxAmount = 200
 		flowState = True
 		isTweakable = True
@@ -555,7 +555,7 @@ PART
 	resPri = 0
 	dstg = 3
 	sidx = 1
-	sqor = 1
+	sqor = 0
 	sepI = 0
 	attm = 0
 	modCost = 0
@@ -664,6 +664,7 @@ PART
 	modSize = 0,0,0
 	link = batteryBankMini_4294532988
 	link = fuelTank_4294504956
+	link = GooExperiment_4294199546
 	attN = top2,batteryBankMini_4294532988
 	attN = top,stackDecoupler_4294559774
 	attN = bottom,fuelTank_4294504956
@@ -801,7 +802,7 @@ PART
 {
 	part = solarPanels5_4294532960
 	partName = Part
-	pos = 0.0453338027,10.7774515,-0.28067717
+	pos = 0.0453338027,10.7774515,-0.280677289
 	attPos = 0,-0.0752334595,0.0313916802
 	attPos0 = -2.98023188E-08,-0.0830392838,-0.310702085
 	rot = -0.707106948,0.707106948,-3.27825546E-07,-3.27825546E-07
@@ -873,7 +874,7 @@ PART
 {
 	part = solarPanels5_4294532932
 	partName = Part
-	pos = 0.0453338027,10.7774515,0.27794528
+	pos = 0.0453338027,10.7774515,0.277945399
 	attPos = 0,-0.0752334595,-0.031391561
 	attPos0 = 5.96046448E-08,-0.0830392838,0.310702085
 	rot = -3.27825546E-07,-3.87430191E-07,0.707106948,-0.707106948
@@ -945,7 +946,7 @@ PART
 {
 	part = sensorThermometer_4294532904
 	partName = Part
-	pos = 0.354842395,10.9257793,-0.00136595964
+	pos = 0.354842544,10.9257793,-0.00136595964
 	attPos = 0,0,0
 	attPos0 = 0.309507638,-0.00994491577,2.98023366E-08
 	rot = 8.72680772E-08,0.707106888,8.72680914E-08,-0.707106888
@@ -1026,7 +1027,7 @@ PART
 {
 	part = sensorBarometer_4294532878
 	partName = Part
-	pos = -0.259670824,10.8858719,-0.00136595964
+	pos = -0.259670973,10.8858719,-0.00136595964
 	attPos = 0,0,0
 	attPos0 = -0.305003881,-0.0498523712,2.98023366E-08
 	rot = -8.72680772E-08,0.707106888,8.72680914E-08,0.707106888
@@ -1246,8 +1247,8 @@ PART
 	istg = 1
 	resPri = 0
 	dstg = 4
-	sidx = 1
-	sqor = 2
+	sidx = 0
+	sqor = 1
 	sepI = 0
 	attm = 0
 	modCost = 0
@@ -1417,7 +1418,7 @@ PART
 {
 	part = miniLandingLeg_4294466230
 	partName = Part
-	pos = 0.690166891,8.56733227,-0.00136592984
+	pos = 0.690167129,8.56733227,-0.00136592984
 	attPos = 0,0,0
 	attPos0 = 0.644831181,-0.952702522,5.96045346E-08
 	rot = 0,1.00000012,0,0
@@ -1551,7 +1552,7 @@ PART
 {
 	part = miniLandingLeg_4294464780
 	partName = Part
-	pos = 0.0453338623,8.56733227,-0.646198988
+	pos = 0.0453338623,8.56733227,-0.646199226
 	attPos = 0,0,0
 	attPos0 = 5.96045346E-08,-0.952702522,-0.644831121
 	rot = 0,0.707106888,0,-0.707106888
@@ -1685,7 +1686,7 @@ PART
 {
 	part = miniLandingLeg_4294464604
 	partName = Part
-	pos = -0.599499285,8.56733227,-0.00136598945
+	pos = -0.599499524,8.56733227,-0.00136598945
 	attPos = 0,0,0
 	attPos0 = -0.644831181,-0.952702522,0
 	rot = 0,-1.1920929E-07,0,-1.00000012
@@ -1819,7 +1820,7 @@ PART
 {
 	part = miniLandingLeg_4294464428
 	partName = Part
-	pos = 0.0453338027,8.56733227,0.643467069
+	pos = 0.0453338027,8.56733227,0.643467307
 	attPos = 0,0,0
 	attPos0 = -1.77635362E-14,-0.952702522,0.644831121
 	rot = 0,-0.707106888,0,-0.707106888
@@ -1966,8 +1967,8 @@ PART
 	istg = 1
 	resPri = 0
 	dstg = 5
-	sidx = 0
-	sqor = 2
+	sidx = 1
+	sqor = 1
 	sepI = 1
 	attm = 0
 	modCost = 0
@@ -2440,7 +2441,7 @@ PART
 	resPri = 0
 	dstg = 6
 	sidx = 1
-	sqor = 3
+	sqor = 2
 	sepI = 1
 	attm = 0
 	modCost = 0
@@ -2623,7 +2624,7 @@ PART
 {
 	part = basicFin_4294298396
 	partName = Part
-	pos = 0.0453338027,2.28003693,-0.620665431
+	pos = 0.0453338027,2.28003693,-0.620665669
 	attPos = 0,0,0
 	attPos0 = -5.96046519E-08,-0.663944244,-0.619298995
 	rot = -4.21468371E-08,0.70710665,4.21468656E-08,-0.707107127
@@ -2675,10 +2676,10 @@ PART
 {
 	part = basicFin_4294298366
 	partName = Part
-	pos = -0.49099499,2.28003693,0.308283716
+	pos = -0.490995228,2.28003693,0.308283895
 	attPos = 0,0,0
 	attPos0 = -0.536328554,-0.663944244,0.309649587
-	rot = 1.54268367E-08,-0.258819461,5.75736649E-08,-0.965925932
+	rot = 1.54268349E-08,-0.258819461,5.75736649E-08,-0.965925932
 	attRot = 0,0,0,1
 	attRot0 = 1.54268349E-08,-0.258819401,5.75736472E-08,-0.965925694
 	mir = 1,1,1
@@ -2727,7 +2728,7 @@ PART
 {
 	part = basicFin_4294298336
 	partName = Part
-	pos = 0.581662595,2.28003693,0.308283478
+	pos = 0.581662834,2.28003693,0.308283627
 	attPos = 0,0,0
 	attPos0 = 0.536328673,-0.663944244,0.309649408
 	rot = 5.75736756E-08,-0.965926051,1.54267958E-08,-0.258818746
@@ -2779,7 +2780,7 @@ PART
 {
 	part = launchClamp1_4294298306
 	partName = Part
-	pos = 0.0453338027,4.2114625,1.42463255
+	pos = 0.0453338027,4.2114625,1.42463315
 	attPos = 0,0,0
 	attPos0 = -3.55271673E-14,-0.610710144,1.42599821
 	rot = 0,1.00000012,5.96046448E-08,0
@@ -2793,7 +2794,7 @@ PART
 	resPri = 0
 	dstg = 6
 	sidx = 1
-	sqor = 4
+	sqor = 3
 	sepI = 3
 	attm = 1
 	modCost = 0
@@ -2813,7 +2814,7 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.93073022
+		scaleFactor = 1.93073094
 		height = 4.8716135
 		stagingEnabled = True
 		towerRot = 0,-1,-5.96046377E-08,0
@@ -2883,7 +2884,7 @@ PART
 {
 	part = radialDecoupler_4294298196
 	partName = Part
-	pos = -0.583756447,4.71992254,-0.00136598945
+	pos = -0.583756745,4.71992254,-0.00136598945
 	attPos = -3.57627869E-07,-0.22054863,0
 	attPos0 = -0.629089534,0.118298531,0
 	rot = 0,0,0,1.00000012
@@ -2897,7 +2898,7 @@ PART
 	resPri = 0
 	dstg = 7
 	sidx = 0
-	sqor = 3
+	sqor = 2
 	sepI = 2
 	attm = 1
 	modCost = 0
@@ -2987,7 +2988,7 @@ PART
 {
 	part = solidBooster1-1_4294298146
 	partName = Part
-	pos = -1.38016176,4.23757124,-0.00136598945
+	pos = -1.38016248,4.23757124,-0.00136598945
 	attPos = 0,0,0
 	attPos0 = -0.796405137,-0.482351303,-5.96046874E-08
 	rot = 0,-0.707106888,0,0.707106888
@@ -3001,7 +3002,7 @@ PART
 	resPri = 0
 	dstg = 8
 	sidx = 0
-	sqor = 4
+	sqor = 3
 	sepI = 2
 	attm = 1
 	modCost = 0
@@ -3114,7 +3115,7 @@ PART
 {
 	part = radialDecoupler_4294298076
 	partName = Part
-	pos = 0.674424529,4.71992254,-0.00136598945
+	pos = 0.674424827,4.71992254,-0.00136598945
 	attPos = 6.55651093E-07,-0.22054863,0
 	attPos0 = 0.629089594,0.118298531,-5.96046874E-08
 	rot = 0,1.00000012,0,-1.1920929E-07
@@ -3128,7 +3129,7 @@ PART
 	resPri = 0
 	dstg = 7
 	sidx = 0
-	sqor = 3
+	sqor = 2
 	sepI = 2
 	attm = 1
 	modCost = 0
@@ -3218,7 +3219,7 @@ PART
 {
 	part = solidBooster1-1_4294298026
 	partName = Part
-	pos = 1.47082925,4.23757124,-0.00136622787
+	pos = 1.47082973,4.23757124,-0.00136622787
 	attPos = 0,0,0
 	attPos0 = -0.796405137,-0.482351303,-5.96046874E-08
 	rot = 0,0.707106948,0,0.707106829
@@ -3232,7 +3233,7 @@ PART
 	resPri = 0
 	dstg = 8
 	sidx = 0
-	sqor = 4
+	sqor = 3
 	sepI = 2
 	attm = 1
 	modCost = 0
@@ -3339,5 +3340,91 @@ PART
 		hideFlow = False
 		isVisible = True
 		flowMode = Both
+	}
+}
+PART
+{
+	part = GooExperiment_4294199546
+	partName = Part
+	pos = 0.0449787378,10.4871702,-0.00136601925
+	attPos = -3.25671721E-08,0.0414476395,-0.270741612
+	attPos0 = 2.79396306E-09,-0.34000206,0.271096677
+	rot = -0.499999851,0.500000298,-0.5,-0.50000006
+	attRot = 0.707106709,0.707106709,0,0
+	attRot0 = -0.70710665,1.7881392E-07,-1.19209275E-07,-0.707106948
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,ServiceBay.125_4294533386
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		isEnabled = True
+		aniState = LOCKED
+		animSwitch = True
+		animTime = 0
+		animSpeed = 1
+		deployPercent = 100
+		animationIsDisabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		cooldownToGo = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 }
