@@ -194,7 +194,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 20951131.29182807
+		update = 20123503.946053006
 		version = 1.3.0
 		WEIGHTS
 		{
@@ -237,99 +237,13 @@ GAME
 			Duna = 30
 			Eve = 13
 			Moho = 30
-			Minmus = 43
+			Minmus = 47
 			Mun = 19
 			Kerbin = 10
 			Sun = 26
 		}
 		CONTRACTS
 		{
-			CONTRACT
-			{
-				guid = aca3fc28-8d07-4f43-bf19-40a32abf10b9
-				type = SurveyContract
-				prestige = 0
-				seed = 988689813
-				state = Offered
-				viewed = Seen
-				agent = O.M.B. Demolition Enterprises
-				deadlineType = Floating
-				expiryType = Floating
-				values = 64800,69012000,27000,50084.9977254868,28349.9987125397,0,4.761905,18,20967537.1835771,0,0,0
-				targetBody = 2
-				centerLatitude = 4.3335595872581258
-				centerLongitude = -178.52602019837406
-				dataName = temperature
-				anomalyName = fluctuations
-				reportName = measurements
-				locationName = The Mun^N
-				focusedSurvey = False
-				targetBand = LOW
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 7920,0,1,2,0
-					targetBody = 2
-					actionDescription = Measure the temperature
-					experiment = temperatureScan
-					flightThreshold = 10900
-					band = 2
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = 1009208173
-					wpIndex = 0
-					wpTexture = thermometer
-					wpLatitude = 10.770145086615408
-					wpLongitude = -177.34482141516554
-					wpLandlocked = False
-					wpNavigationId = bb57ef0c-142a-4001-b522-f166214c1dc4
-				}
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 7920,0,1,2,0
-					targetBody = 2
-					actionDescription = Measure the temperature
-					experiment = temperatureScan
-					flightThreshold = 10400
-					band = 2
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = 1009208173
-					wpIndex = 1
-					wpTexture = thermometer
-					wpLatitude = -5.6030270058936873
-					wpLongitude = -175.17332779643866
-					wpLandlocked = False
-					wpNavigationId = f4e06f60-2e59-46ac-a395-75d89a2340c9
-				}
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 7920,0,1,2,0
-					targetBody = 2
-					actionDescription = Measure the temperature
-					experiment = temperatureScan
-					flightThreshold = 9400
-					band = 2
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = 1009208173
-					wpIndex = 2
-					wpTexture = thermometer
-					wpLatitude = 16.91235529512787
-					wpLongitude = 178.58832093144247
-					wpLandlocked = False
-					wpNavigationId = d526ac9c-7566-45ca-90c4-d154891d5b90
-				}
-			}
 			CONTRACT
 			{
 				guid = fcdcaf70-bfa5-4440-98e3-6ea24332d3fa
@@ -356,6 +270,72 @@ GAME
 			}
 			CONTRACT
 			{
+				guid = 4755e180-7575-4fac-bf51-a7655d6b0bab
+				type = PartTest
+				prestige = 0
+				seed = 1886455394
+				state = Offered
+				viewed = Seen
+				agent = Rockomax Conglomerate
+				deadlineType = Floating
+				expiryType = Floating
+				values = 19315.8960745368,8228571.72775267,4211.61040925303,11055.4768222261,14600.2489314079,1,2.048266,6,20131090.1142519,0,0,0
+				part = solidBooster1-1
+				haul = True
+				dest = 1
+				sit = FLYING
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = solidBooster1-1
+					body = Kerbin
+					situation = FLYING
+					uniqueID = 0.67336279418010392
+					haul = True
+					repeatability = ALWAYS
+				}
+				PARAM
+				{
+					name = ReachDestination
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					dest = 1
+					title = 
+				}
+				PARAM
+				{
+					name = ReachSituation
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					sit = FLYING
+					title = 
+				}
+				PARAM
+				{
+					name = ReachAltitudeEnvelope
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					minAlt = 47000
+					maxAlt = 53000
+				}
+				PARAM
+				{
+					name = ReachSpeedEnvelope
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					minSpd = 320
+					maxSpd = 500
+				}
+			}
+			CONTRACT
+			{
 				guid = 7178e40f-9e47-49e4-8376-cb35a26546a7
 				type = PlantFlag
 				prestige = 0
@@ -377,53 +357,20 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 61931d7a-b46c-4ce8-a8de-9f0c2da1a3e5
-				type = PlantFlag
-				prestige = 0
-				seed = 988689821
-				state = Offered
-				viewed = Seen
-				agent = Research & Development Department
-				deadlineType = Floating
-				expiryType = Floating
-				values = 108000,69012000,20700,52200,20700,0,8,14,21010737.1835771,0,0,0
-				body = 2
-				PARAM
-				{
-					name = PlantFlag
-					state = Incomplete
-					values = 0,0,0,0,0
-					body = 2
-				}
-			}
-			CONTRACT
-			{
-				guid = f4165981-46fd-4207-927f-12a24be71bb4
+				guid = 5d478e8c-1663-4316-8351-c3a6ec7e937a
 				type = SatelliteContract
 				prestige = 0
-				seed = 988689826
+				seed = 787367689
 				state = Offered
-				viewed = Read
-				agent = Moving Parts Experts Group
+				viewed = Seen
+				agent = Kerbodyne
 				deadlineType = Floating
 				expiryType = Floating
-				values = 62289.7272738862,44225706.3644592,3955.96788867188,10644.0256170799,4112.63973632813,0,0.9247289,1.923077,20965026.910851,0,0,0
-				targetBody = 1
+				values = 108000,46008000,9600,24600,9600,0,6,10,20197437.220591,0,0,0
+				targetBody = 3
 				deviation = 7
-				orbitType = 6
-				placementMode = 1
-				PARAM
-				{
-					name = SpecificVesselParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					TargetBody = 1
-					targetVesselID = 18731f05dcdf42808291aee1882dcf40
-					targetVesselPartCount = 26
-					targetVesselName = Pistachio Dumpster DeF
-					targetVesselSituation = ORBITING
-					partIDs = 251042208|2827567418|1050331964|4078875980|1720445916|704324895|337881892|1797750971|2955594400|942439220|4072198241|401361196|3324459085|2254499361|2888034567|2968208093|3386931688|2336869640|1276141931|3318507418|3315253266|1484430887|3903475222|2804576190|3619422084|632822106
-				}
+				orbitType = 2
+				placementMode = 0
 				PARAM
 				{
 					name = VesselSystemsParameter
@@ -431,25 +378,26 @@ GAME
 					values = 0,0,0,0,0
 					typeString = probe
 					mannedStatus = 1
-					requireNew = False
+					requireNew = True
 					checkModuleTypes = Antenna|Generator
 					checkModuleDescriptions = has an antenna|can generate power
+					launchID = 0
 				}
 				PARAM
 				{
 					name = SpecificOrbitParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					TargetBody = 1
+					TargetBody = 3
 					deviationWindow = 7
-					orbitType = 6
-					inclination = 9.6342517689367462
-					eccentricity = 0.0049046645304726593
-					sma = 687003.31329653191
-					lan = 220.81751128121914
-					argumentOfPeriapsis = 110.50319974860975
-					meanAnomalyAtEpoch = 1.3775839652597539
-					epoch = 20103790.53610044
+					orbitType = 2
+					inclination = 90
+					eccentricity = 0.018778116749533731
+					sma = 310930.50176309876
+					lan = 154.8209310857676
+					argumentOfPeriapsis = 314.07803421564267
+					meanAnomalyAtEpoch = -2.5136764084415817
+					epoch = 0
 				}
 				PARAM
 				{
@@ -457,6 +405,99 @@ GAME
 					state = Incomplete
 					values = 0,0,0,0,0
 					holdSeconds = 10
+				}
+			}
+			CONTRACT
+			{
+				guid = dd2f3b44-07c7-4c10-b926-327f2f6e5318
+				type = RecoverAsset
+				prestige = 0
+				seed = 787367693
+				state = Offered
+				viewed = Seen
+				agent = C7 Aerospace Division
+				deadlineType = Floating
+				expiryType = Floating
+				values = 129600,46008000,14040,32076,14040,0,6,19,20219037.220591,0,0,0
+				targetBody = 1
+				kerbalName = Jawig Kerman
+				partName = MK1CrewCabin
+				partID = 0
+				recoveryLocation = 1
+				recoveryType = 1
+				PARAM
+				{
+					name = AcquireCrew
+					state = Incomplete
+					values = 3564,0,0,2,0
+					title = Save Jawig Kerman
+					winOn = 0
+				}
+				PARAM
+				{
+					name = RecoverKerbal
+					state = Incomplete
+					values = 0,0,0,0,0
+					title = Recover Jawig Kerman on Kerbin
+					failOn = All
+					winOn = All
+				}
+			}
+			CONTRACT
+			{
+				guid = 29c43cc8-832f-488e-936f-a6745b77b256
+				type = PartTest
+				prestige = 1
+				seed = 787367716
+				state = Offered
+				viewed = Seen
+				agent = Research & Development Department
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,9201600,10125,25312,33750,2,7,18,20132637.220591,0,0,0
+				part = cryoengine-125-2
+				haul = True
+				dest = 3
+				sit = SUB_ORBITAL
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = cryoengine-125-2
+					body = Minmus
+					situation = SUB_ORBITAL
+					uniqueID = 0.042426282559720002
+					haul = True
+					repeatability = BODYANDSITUATION
+				}
+				PARAM
+				{
+					name = ReachDestination
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					dest = 3
+					title = 
+				}
+				PARAM
+				{
+					name = ReachSituation
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					sit = SUB_ORBITAL
+					title = 
+				}
+				PARAM
+				{
+					name = ReachAltitudeEnvelope
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					minAlt = 150000
+					maxAlt = 160000
 				}
 			}
 			CONTRACT
@@ -925,182 +966,351 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 1c8d3ebc-ece4-4e04-a839-0165e17d4a8d
-				type = RecoverAsset
+				guid = e57a4f08-189b-4dce-81a7-52f7673a21cd
+				type = SatelliteContract
 				prestige = 1
-				seed = 988689837
+				seed = 787367707
 				state = Offered
 				viewed = Seen
-				agent = Space Penguins, Inc
+				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
 				deadlineType = Floating
 				expiryType = Floating
-				values = 86400,69012000,26325,60142,26325,0,7,24,20989137.1835771,0,0,0
-				targetBody = 2
-				kerbalName = Geofburry Kerman
-				partName = Mark2Cockpit
-				partID = 0
-				recoveryLocation = 2
-				recoveryType = 1
+				values = 96428.5705089569,41078571.0368156,6206.89601898193,17495.6885327142,7920.00017166138,0,3.406993,4.807693,20185865.7910999,0,0,0
+				targetBody = 1
+				deviation = 5
+				orbitType = 6
+				placementMode = 1
 				PARAM
 				{
-					name = AcquireCrew
+					name = SpecificVesselParameter
 					state = Incomplete
-					values = 6682,0,0,3,0
-					title = Save Geofburry Kerman
-					winOn = 0
+					values = 0,0,0,0,0
+					TargetBody = 1
+					targetVesselID = 0932da8495f14c6c83c548eb3fda05f2
+					targetVesselPartCount = 21
+					targetVesselName = Donut Pyxis Epsilon
+					targetVesselSituation = ORBITING
+					partIDs = 2538144548|2397191356|243608624|2760743601|4195124229|4129543644|3580467299|425960454|887276121|878403184|1499757346|499477287|4151305406|1848858816|1903124561|449792527|2810282969|2545335548|1487305353|1465077722|28203200
 				}
 				PARAM
 				{
-					name = RecoverKerbal
+					name = VesselSystemsParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					title = Recover Geofburry Kerman on Kerbin
-					failOn = All
-					winOn = All
+					typeString = probe
+					mannedStatus = 1
+					requireNew = False
+					checkModuleTypes = Antenna|Generator
+					checkModuleDescriptions = has an antenna|can generate power
+				}
+				PARAM
+				{
+					name = SpecificOrbitParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					TargetBody = 1
+					deviationWindow = 5
+					orbitType = 6
+					inclination = 87.665413349324609
+					eccentricity = 0.85534694056271487
+					sma = 6694127.0132975085
+					lan = 12.398727669893731
+					argumentOfPeriapsis = 231.05068034865707
+					meanAnomalyAtEpoch = 0.66054552030027114
+					epoch = 18607584.760150105
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					holdSeconds = 10
 				}
 			}
 			CONTRACT
 			{
-				guid = f06828bd-f408-4d40-8abf-b84ed09dc0fc
-				type = RecoverAsset
+				guid = d365c026-3d1f-4956-a307-ca0a437b45c9
+				type = PartTest
 				prestige = 1
-				seed = 988689827
+				seed = 787367704
 				state = Offered
 				viewed = Seen
 				agent = O.M.B. Demolition Enterprises
 				deadlineType = Floating
 				expiryType = Floating
-				values = 86400,46008000,17550,44104.5009559393,19305.0004184246,0,6.363636,24,20989137.1835771,0,0,0
-				targetBody = 3
-				kerbalName = Kalin Kerman
-				partName = mk1pod
-				partID = 0
-				recoveryLocation = 1
-				recoveryType = 1
+				values = 43200,9201600,6750,18562.5004023314,24750.0005364418,2,3.636364,10,20132637.220591,0,0,0
+				part = HeatShield3
+				haul = False
+				dest = 1
+				sit = FLYING
+				exp = True
 				PARAM
 				{
-					name = AcquireCrew
-					state = Incomplete
-					values = 4455,0,0,3,0
-					title = Save Kalin Kerman
-					winOn = 0
-				}
-				PARAM
-				{
-					name = RecoverKerbal
+					name = PartTest
 					state = Incomplete
 					values = 0,0,0,0,0
-					title = Recover Kalin Kerman on Kerbin
-					failOn = All
-					winOn = All
+					part = HeatShield3
+					body = Kerbin
+					situation = FLYING
+					uniqueID = 0.62703069701186875
+					haul = False
+					repeatability = BODYANDSITUATION
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = FLYING
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 33000
+						maxAlt = 43000
+					}
+					PARAM
+					{
+						name = ReachSpeedEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minSpd = 1510
+						maxSpd = 1890
+					}
 				}
 			}
 			CONTRACT
 			{
-				guid = 3bd89bbb-905c-4ebe-87b5-bad05153b8ca
-				type = RecoverAsset
+				guid = 8896e4fa-1087-46b4-aefc-87f22a7c061d
+				type = SatelliteContract
 				prestige = 2
-				seed = 988689858
-				state = Offered
-				viewed = Seen
-				agent = C7 Aerospace Division
-				deadlineType = Floating
-				expiryType = Floating
-				values = 64800,69012000,33047,75500,33047,0,9,30,20967537.1835771,0,0,0
-				targetBody = 2
-				kerbalName = Diltop Kerman
-				partName = Mark2Cockpit
-				partID = 0
-				recoveryLocation = 3
-				recoveryType = 1
-				PARAM
-				{
-					name = AcquireCrew
-					state = Incomplete
-					values = 8389,0,0,4,0
-					title = Save Diltop Kerman
-					winOn = 0
-				}
-				PARAM
-				{
-					name = RecoverKerbal
-					state = Incomplete
-					values = 0,0,0,0,0
-					title = Recover Diltop Kerman on Kerbin
-					failOn = All
-					winOn = All
-				}
-			}
-			CONTRACT
-			{
-				guid = f12c26ff-f1e9-41ff-b42d-07dee8695ca5
-				type = RecoverAsset
-				prestige = 2
-				seed = 988689856
-				state = Offered
-				viewed = Seen
-				agent = Ionic Symphonic Protonic Electronics
-				deadlineType = Floating
-				expiryType = Floating
-				values = 129600,46008000,21353,48782,21353,0,9,29,21032337.1835771,0,0,0
-				targetBody = 3
-				kerbalName = Nataoly Kerman
-				partName = landerCabinSmall
-				partID = 0
-				recoveryLocation = 3
-				recoveryType = 1
-				PARAM
-				{
-					name = AcquireCrew
-					state = Incomplete
-					values = 5420,0,0,4,0
-					title = Save Nataoly Kerman
-					winOn = 0
-				}
-				PARAM
-				{
-					name = RecoverKerbal
-					state = Incomplete
-					values = 0,0,0,0,0
-					title = Recover Nataoly Kerman on Kerbin
-					failOn = All
-					winOn = All
-				}
-			}
-			CONTRACT
-			{
-				guid = 36e161f1-a9b2-4599-a394-86de72dbb953
-				type = RecoverAsset
-				prestige = 2
-				seed = 988689848
+				seed = 787367728
 				state = Offered
 				viewed = Seen
 				agent = StrutCo
 				deadlineType = Floating
 				expiryType = Floating
-				values = 64800,46008000,21060,55331.0988528728,24218.9994978905,0,7.826087,28,20967537.1835771,0,0,0
-				targetBody = 3
-				kerbalName = Roskin Kerman
-				partName = Mark1Cockpit
-				partID = 0
-				recoveryLocation = 2
-				recoveryType = 1
+				values = 43200,46008000,38102,112282.547672153,43817.2990915775,4,13.04348,24,20132637.220591,0,0,0
+				targetBody = 1
+				deviation = 3
+				orbitType = 1
+				placementMode = 0
 				PARAM
 				{
-					name = AcquireCrew
+					name = VesselSystemsParameter
 					state = Incomplete
-					values = 5346,0,0,4,0
-					title = Save Roskin Kerman
-					winOn = 0
+					values = 0,0,0,0,0
+					typeString = probe
+					mannedStatus = 1
+					requireNew = True
+					checkModuleTypes = Antenna|Generator
+					checkModuleDescriptions = has an antenna|can generate power
+					launchID = 0
 				}
 				PARAM
 				{
-					name = RecoverKerbal
+					name = SpecificOrbitParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					title = Recover Roskin Kerman on Kerbin
-					failOn = All
-					winOn = All
+					TargetBody = 1
+					deviationWindow = 3
+					orbitType = 1
+					inclination = 0
+					eccentricity = 4.002966042486721E-16
+					sma = 3463334.0594887673
+					lan = 318.34800222352231
+					argumentOfPeriapsis = 56.309932474020208
+					meanAnomalyAtEpoch = 0.13718630747388744
+					epoch = 0
+				}
+				PARAM
+				{
+					name = StationaryPointParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 1
+					longitude = 71.569899251484287
+					deviation = 3
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					article = a
+					partDescription = mystery goo unit
+					vesselDescription = satellite
+					partNames = GooExperiment
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					article = a
+					partDescription = thermometer
+					vesselDescription = satellite
+					partNames = sensorThermometer
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+			}
+			CONTRACT
+			{
+				guid = 05b0350c-f197-4346-890c-337fee9e396c
+				type = SatelliteContract
+				prestige = 2
+				seed = 787367724
+				state = Offered
+				viewed = Seen
+				agent = Vac-Co Advanced Suction Systems
+				deadlineType = Floating
+				expiryType = Floating
+				values = 83883.4991455078,44667963.2949829,22457.3681639057,66182.0411162413,25073.7607479925,10,10.37096,21,20173320.7197365,0,0,0
+				targetBody = 3
+				deviation = 3
+				orbitType = 1
+				placementMode = 0
+				PARAM
+				{
+					name = VesselSystemsParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					typeString = probe
+					mannedStatus = 1
+					requireNew = True
+					checkModuleTypes = Antenna|Generator
+					checkModuleDescriptions = has an antenna|can generate power
+					launchID = 0
+				}
+				PARAM
+				{
+					name = SpecificOrbitParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					TargetBody = 3
+					deviationWindow = 3
+					orbitType = 1
+					inclination = 0
+					eccentricity = 6.4736570491389375E-16
+					sma = 417940.86524960049
+					lan = 318.34800222352231
+					argumentOfPeriapsis = 149.03624346792648
+					meanAnomalyAtEpoch = -3.1401718181035609
+					epoch = 0
+				}
+				PARAM
+				{
+					name = StationaryPointParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 3
+					longitude = 154.55012394792868
+					deviation = 3
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					article = a
+					partDescription = mystery goo unit
+					vesselDescription = satellite
+					partNames = GooExperiment
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					article = a
+					partDescription = thermometer
+					vesselDescription = satellite
+					partNames = sensorThermometer
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					article = a
+					partDescription = materials bay
+					vesselDescription = satellite
+					partNames = science_module
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+			}
+			CONTRACT
+			{
+				guid = 366790a1-9f46-4bf5-89b9-c3654908d67d
+				type = PartTest
+				prestige = 2
+				seed = 1886455398
+				state = Offered
+				viewed = Seen
+				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
+				deadlineType = Floating
+				expiryType = Floating
+				values = 36610.1703643799,7797966.28761292,7838.70973348618,22536.2900165492,37259.9992275238,2,7.201969,14.15094,20148384.3885417,0,0,0
+				part = orbital-engine-25
+				haul = False
+				dest = 3
+				sit = ESCAPING
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = orbital-engine-25
+					body = Minmus
+					situation = ESCAPING
+					uniqueID = 0.47849465602938768
+					haul = False
+					repeatability = ONCEPERPART
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 3
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = ESCAPING
+						title = 
+					}
 				}
 			}
 			CONTRACT_FINISHED
@@ -13085,7 +13295,7 @@ GAME
 		}
 		SpaceCenter/Runway
 		{
-			lvl = 0.5
+			lvl = 0
 		}
 		SpaceCenter/VehicleAssemblyBuilding
 		{
@@ -13124,7 +13334,7 @@ GAME
 	{
 		name = SentinelScenario
 		scene = 7, 8, 5
-		NextSpawnTime = 20960164.590984117
+		NextSpawnTime = 20132425.95679988
 	}
 	SCENARIO
 	{
@@ -13135,6 +13345,669 @@ GAME
 	{
 		name = ContractPreLoader
 		scene = 7, 8, 5
+		CONTRACT
+		{
+			guid = 678d35a0-8c5e-47ba-8b62-ea447ae1f5f1
+			type = ConfiguredContract
+			prestige = 1
+			seed = 344597367
+			state = Offered
+			viewed = Read
+			agent = Space Penguins, Inc
+			deadlineType = Floating
+			expiryType = Floating
+			ignoresWeight = True
+			values = 2067180,39007358.7890625,7452,23399,24839,2,11,0,20182305.0950225,0,0,0
+			subtype = Tundra Orbital Satellite
+			title = Orbit the first satellite in a Tundra orbit around Minmus .
+			description = The CEO (and chief bottle washer) at Space Penguins, Inc has stumbled on a problem. We're not sure how pretty Minmus is up close. So this is where you come in.
+			synopsis = Put a satellite in orbit around Minmus .
+			completedMessage = You did it! We've placed a satellite in orbit around Minmus !  This will be a day long remembered.
+			notes = Complete the following:
+			hash = -1181281638
+			targetBody = Minmus
+			UNIQUE_DATA
+			{
+				uid = String:TundraOrbitalSatellite:Minmus
+			}
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.OrbitGenerator
+				ORBIT_DETAIL
+				{
+					type = RANDOM_ORBIT
+					ORBIT
+					{
+						SMA = 263286.24686962424
+						ECC = 0.73678837833745137
+						INC = 63.399999999999999
+						LPE = 90.000000000000028
+						LAN = 326.75453087629495
+						MNA = -1.7770399598486026
+						EPH = 0
+						REF = 3
+					}
+				}
+			}
+			PARAM
+			{
+				name = AlwaysTrue
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VPG_4
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = STGUnmannedMissions.Tundra Orbital Satellite
+				title = 
+				notes = 
+				completedMessage = 
+				define = Satellite
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = HasCrew
+					id = HasCrew_4
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = STGUnmannedMissions.Tundra Orbital Satellite
+					title = 
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					allowStateReset = True
+					minCrew = 0
+					maxCrew = 0
+					minExperience = 0
+					maxExperience = 5
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Unmanned
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = STGUnmannedMissions.Tundra Orbital Satellite
+						title = Unmanned
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = OrbitParameter
+					id = TundraOrbit_4
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = STGUnmannedMissions.Tundra Orbital Satellite
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					situation = 0
+					targetBody = Minmus
+					minAltitude = 0
+					minApoapsis = 0
+					minPeriapsis = 0
+					minEccentricity = 0
+					minInclination = 0
+					maxInclination = 180
+					minArgumentOfPeriapsis = 0
+					maxArgumentOfPeriapsis = 0
+					minPeriod = 0
+					displayNotes = True
+					deviationWindow = 3
+					ORBIT
+					{
+						SMA = 263286.24686962424
+						ECC = 0.73678837833745137
+						INC = 63.399999999999999
+						LPE = 90.000000000000028
+						LAN = 326.75453087629495
+						MNA = -1.7770399598486026
+						EPH = 0
+						REF = 3
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Minmus
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = STGUnmannedMissions.Tundra Orbital Satellite
+						title = Destination: Minmus
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Reach the specified orbit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = STGUnmannedMissions.Tundra Orbital Satellite
+						title = Reach the specified orbit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+		}
+		CONTRACT
+		{
+			guid = c7f1ef0a-c801-4998-ad96-7ba0b12e4ead
+			type = ConfiguredContract
+			prestige = 1
+			seed = 1570184069
+			state = Offered
+			viewed = Seen
+			agent = Field Research Team
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 1924140,0,0,27211,0,0,10,0,20709836.7911193,0,0,0
+			subtype = FS_HardScience
+			title = Gather rare science results from Kerbin's Southern Ice Shelf
+			description = They say that it's difficult to find water at Kerbin's Southern Ice Shelf.  We've mapped out a few locations where there might be some.  Find a suitable spot and run some experiments.
+			synopsis = Run the requested experiments in while splashed down at Kerbin's Southern Ice Shelf.
+			completedMessage = This is some great data that we've accumulated!
+			hash = 1041133242
+			targetBody = Kerbin
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.WaypointGenerator
+				WAYPOINT
+				{
+					type = WAYPOINT
+					names = Suggested Southern Ice Shelf Splashdown
+					celestialName = Kerbin
+					name = Suggested Southern Ice Shelf Splashdown
+					icon = ContractPacks/FieldResearch/Icons/research
+					latitude = -75.8935546875
+					longitude = 85.9130859375
+					altitude = 0
+					index = 0
+					hidden = False
+					clustered = False
+					randomAltitude = False
+					underwater = False
+				}
+				WAYPOINT
+				{
+					type = WAYPOINT
+					names = Suggested Southern Ice Shelf Splashdown
+					celestialName = Kerbin
+					name = Suggested Southern Ice Shelf Splashdown
+					icon = ContractPacks/FieldResearch/Icons/research
+					latitude = -69.6533203125
+					longitude = 69.3896484375
+					altitude = 0
+					index = 1
+					hidden = False
+					clustered = False
+					randomAltitude = False
+					underwater = False
+				}
+				WAYPOINT
+				{
+					type = WAYPOINT
+					names = Suggested Southern Ice Shelf Splashdown
+					celestialName = Kerbin
+					name = Suggested Southern Ice Shelf Splashdown
+					icon = ContractPacks/FieldResearch/Icons/research
+					latitude = -73.8720703125
+					longitude = 241.1279296875
+					altitude = 0
+					index = 2
+					hidden = False
+					clustered = False
+					randomAltitude = False
+					underwater = False
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_HardScience
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Kerbin
+				biome = SouthernIceShelf
+				situation = SrfSplashed
+				experiment = evaReport
+				experiment = mobileMaterialsLab
+				experiment = barometerScan
+				recoveryMethod = None
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Kerbin's Southern Ice Shelf
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_HardScience
+					title = Biome: Kerbin's Southern Ice Shelf
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Splashed down
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_HardScience
+					title = Situation: Splashed down
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: EVA Report
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_HardScience
+					title = Experiment: EVA Report
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = evaReportSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_HardScience
+						title = 
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Materials Study
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_HardScience
+					title = Experiment: Materials Study
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = mobileMaterialsLabSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_HardScience
+						title = 
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Atmospheric Pressure Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_HardScience
+					title = Experiment: Atmospheric Pressure Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = barometerScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_HardScience
+						title = 
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+		}
+		CONTRACT
+		{
+			guid = 36b5cc29-a2d5-4736-8668-c0e0fb9ef85c
+			type = ConfiguredContract
+			prestige = 1
+			seed = 1756844674
+			state = Offered
+			viewed = Read
+			agent = Space Penguins, Inc
+			deadlineType = Floating
+			expiryType = Floating
+			ignoresWeight = True
+			values = 1745880,48241163.671875,11633,31589,38777,4,17,0,20570331.398944,0,0,0
+			subtype = Equatorial OrbitalSat
+			title = Orbit the first satellite in an equatorial orbit around the Mun .
+			description = As a consequence of a somewhat worse than average accident at Space Penguins, Inc, we've been forced to look for some outside help. We're not sure if there really is such a thing as too many struts, but we'd like to find out. Now we need your help.
+			synopsis = Put a satellite in orbit around the Mun .
+			completedMessage = You did it! We've placed a satellite in orbit around the Mun !  This will be a day long remembered.
+			notes = Complete the following:
+			hash = 767845856
+			targetBody = Mun
+			UNIQUE_DATA
+			{
+				uid = String:EquatorialOrbitalSatellite:Mun
+			}
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.OrbitGenerator
+				ORBIT_DETAIL
+				{
+					type = RANDOM_ORBIT
+					ORBIT
+					{
+						SMA = 1236072.6651671045
+						ECC = 0.0093198729263601655
+						INC = 0
+						LPE = 100.83785336078897
+						LAN = 336.48522774018664
+						MNA = 0.60769850126256419
+						EPH = 0
+						REF = 2
+					}
+				}
+			}
+			PARAM
+			{
+				name = AlwaysTrue
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VPG_4
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = STGUnmannedMissions.Equatorial OrbitalSat
+				title = 
+				notes = 
+				completedMessage = 
+				define = Satellite
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = HasCrew
+					id = HasCrew_4
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = STGUnmannedMissions.Equatorial OrbitalSat
+					title = 
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					allowStateReset = True
+					minCrew = 0
+					maxCrew = 0
+					minExperience = 0
+					maxExperience = 5
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Unmanned
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = STGUnmannedMissions.Equatorial OrbitalSat
+						title = Unmanned
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = OrbitParameter
+					id = EquatorialOrbit_4
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = STGUnmannedMissions.Equatorial OrbitalSat
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					situation = 0
+					targetBody = Mun
+					minAltitude = 0
+					minApoapsis = 0
+					minPeriapsis = 0
+					minEccentricity = 0
+					minInclination = 0
+					maxInclination = 180
+					minArgumentOfPeriapsis = 0
+					maxArgumentOfPeriapsis = 0
+					minPeriod = 0
+					displayNotes = True
+					deviationWindow = 3
+					ORBIT
+					{
+						SMA = 1236072.6651671045
+						ECC = 0.0093198729263601655
+						INC = 0
+						LPE = 100.83785336078897
+						LAN = 336.48522774018664
+						MNA = 0.60769850126256419
+						EPH = 0
+						REF = 2
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: The Mun
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = STGUnmannedMissions.Equatorial OrbitalSat
+						title = Destination: The Mun
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Reach the specified orbit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = STGUnmannedMissions.Equatorial OrbitalSat
+						title = Reach the specified orbit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+		}
+		CONTRACT
+		{
+			guid = f66a524c-b098-4de6-b893-b069e07c52c3
+			type = ConfiguredContract
+			prestige = 1
+			seed = 779164042
+			state = Offered
+			viewed = Unseen
+			agent = Space Penguins, Inc
+			deadlineType = Floating
+			expiryType = Floating
+			ignoresWeight = True
+			values = 1391280,48241163.671875,11649,32560,38829,4,17,0,20585612.3985875,0,0,0
+			subtype = Polar Orbital Satellite
+			title = Put a probe in a polar orbit at the Mun .
+			description = The CEO (and chief bottle washer) at Space Penguins, Inc has stumbled on a problem. We want to know what shades of green we'll see if we expose a Kerbal to high gee forces. So this is where you come in.
+			synopsis = Put a satellite in orbit around the Mun .
+			completedMessage = You did it! We've placed a satellite in orbit around the Mun !  This will be a day long remembered.
+			notes = Complete the following:
+			hash = -627667656
+			targetBody = Mun
+			UNIQUE_DATA
+			{
+				uid = String:PolarOrbitalSatellite:Mun
+			}
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.OrbitGenerator
+				ORBIT_DETAIL
+				{
+					type = RANDOM_ORBIT
+					ORBIT
+					{
+						SMA = 1350874.0405030486
+						ECC = 0.071465982473908549
+						INC = 90
+						LPE = 69.596518869323987
+						LAN = 251.8130379783982
+						MNA = -0.068994443908112213
+						EPH = 0
+						REF = 2
+					}
+				}
+			}
+			PARAM
+			{
+				name = AlwaysTrue
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VPG_4
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = STGUnmannedMissions.Polar Orbital Satellite
+				title = 
+				notes = 
+				completedMessage = 
+				define = Satellite
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = HasCrew
+					id = HasCrew_4
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = STGUnmannedMissions.Polar Orbital Satellite
+					title = 
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					allowStateReset = True
+					minCrew = 0
+					maxCrew = 0
+					minExperience = 0
+					maxExperience = 5
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Unmanned
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = STGUnmannedMissions.Polar Orbital Satellite
+						title = Unmanned
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = OrbitParameter
+					id = PolarOrbit_4
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = STGUnmannedMissions.Polar Orbital Satellite
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					situation = 0
+					targetBody = Mun
+					minAltitude = 0
+					minApoapsis = 0
+					minPeriapsis = 0
+					minEccentricity = 0
+					minInclination = 0
+					maxInclination = 180
+					minArgumentOfPeriapsis = 0
+					maxArgumentOfPeriapsis = 0
+					minPeriod = 0
+					displayNotes = True
+					deviationWindow = 3
+					ORBIT
+					{
+						SMA = 1350874.0405030486
+						ECC = 0.071465982473908549
+						INC = 90
+						LPE = 69.596518869323987
+						LAN = 251.8130379783982
+						MNA = -0.068994443908112213
+						EPH = 0
+						REF = 2
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: The Mun
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = STGUnmannedMissions.Polar Orbital Satellite
+						title = Destination: The Mun
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Reach the specified orbit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = STGUnmannedMissions.Polar Orbital Satellite
+						title = Reach the specified orbit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+		}
 		CONTRACT
 		{
 			guid = 352f8d65-bd84-4561-a2fc-ce59e00db66e
@@ -13516,6 +14389,154 @@ GAME
 					title = Duration: 30 days
 					notes = 
 					completedMessage = 
+				}
+			}
+		}
+		CONTRACT
+		{
+			guid = a10b8d2d-412e-425c-9c21-c675a8328700
+			type = ConfiguredContract
+			prestige = 1
+			seed = 1154959870
+			state = Offered
+			viewed = Unseen
+			agent = Space Penguins, Inc
+			deadlineType = Floating
+			expiryType = Floating
+			ignoresWeight = True
+			values = 2093100,48241163.671875,22583,50963,75277,4,28,0,21646921.0375486,0,0,0
+			subtype = Targeted Unmanned Landing
+			title = Land a probe on the the Mun at a specified target!
+			description = While cleaning up after an unintended ignition, one of the overworked teams at Space Penguins, Inc raised an interesting question. We're trying to figure out if all matter in the universe is as dense as on Kerbin, but haven't come up with a conclusive test for it. We believe that you are much better positioned to deal with this than us.
+			synopsis = Launch an unmanned probe and have it land on the the Mun
+			completedMessage = Future generations will remember this day.
+			notes = Complete the following:
+			hash = -989111454
+			targetBody = Mun
+			UNIQUE_DATA
+			{
+				uid = String:TargetedUnmannedLanding:Mun
+			}
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.WaypointGenerator
+				WAYPOINT
+				{
+					type = RANDOM_WAYPOINT
+					names = Impact Target
+					celestialName = Mun
+					name = Impact Target
+					icon = thermometer
+					latitude = -5.5965815130110945
+					longitude = 26.724844578059788
+					altitude = 0
+					index = 0
+					hidden = False
+					clustered = False
+					randomAltitude = False
+					underwater = False
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VPG__7
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = STGUnmannedMissions.Targeted Unmanned Landing
+				title = 
+				notes = 
+				completedMessage = 
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = HasCrew
+					id = HasCrew_7
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = STGUnmannedMissions.Targeted Unmanned Landing
+					title = 
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					allowStateReset = True
+					minCrew = 0
+					maxCrew = 0
+					minExperience = 0
+					maxExperience = 5
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Unmanned
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = STGUnmannedMissions.Targeted Unmanned Landing
+						title = Unmanned
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = VisitWaypoint
+					id = VisitWaypoint_8
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = STGUnmannedMissions.Targeted Unmanned Landing
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					distance = 5000
+					horizontalDistance = 0
+					waypointIndex = 0
+					hideOnCompletion = True
+					showMessages = False
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState_7
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = STGUnmannedMissions.Targeted Unmanned Landing
+					title = 
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					allowStateReset = False
+					targetBody = Mun
+					situation = LANDED
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: The Mun
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = STGUnmannedMissions.Targeted Unmanned Landing
+						title = Destination: The Mun
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Landed
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = STGUnmannedMissions.Targeted Unmanned Landing
+						title = Situation: Landed
+						notes = 
+						completedMessage = 
+					}
 				}
 			}
 		}
@@ -14401,6 +15422,337 @@ GAME
 		}
 		CONTRACT
 		{
+			guid = 1928bc8c-fceb-408d-823c-5cbad0bf4492
+			type = ConfiguredContract
+			prestige = 1
+			seed = 643578010
+			state = Offered
+			viewed = Unseen
+			agent = Kerbal Space Tourism
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 406260,0,0,41691,0,0,1,50,20225174.8406502,0,0,0
+			subtype = Tourism_SubOrbital
+			title = Bring one tourist over the impact crater
+			description = Some tourist would like to see a specific sight from space.
+			synopsis = Bring one tourist high above the impact crater.
+			completedMessage = The tourist had a great time!
+			hash = -400713966
+			targetBody = Kerbin
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.SpawnPassengers
+				count = 1
+			}
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.WaypointGenerator
+				WAYPOINT
+				{
+					type = WAYPOINT
+					names = The North Pole
+					celestialName = Kerbin
+					name = The North Pole
+					icon = ContractPacks/Tourism/Icons/Kerbal
+					latitude = 86.761654329616306
+					longitude = 308.254415257669
+					altitude = 70000
+					index = 0
+					hidden = True
+					clustered = False
+					randomAltitude = False
+					underwater = False
+				}
+				WAYPOINT
+				{
+					type = WAYPOINT
+					names = The South Pole
+					celestialName = Kerbin
+					name = The South Pole
+					icon = ContractPacks/Tourism/Icons/Kerbal
+					latitude = -87.375163929960095
+					longitude = 49.251726151792603
+					altitude = 70000
+					index = 1
+					hidden = True
+					clustered = False
+					randomAltitude = False
+					underwater = False
+				}
+				WAYPOINT
+				{
+					type = WAYPOINT
+					names = The Great Desert
+					celestialName = Kerbin
+					name = The Great Desert
+					icon = ContractPacks/Tourism/Icons/Kerbal
+					latitude = 2.4902494069446099
+					longitude = 218.604135349567
+					altitude = 70000
+					index = 2
+					hidden = True
+					clustered = False
+					randomAltitude = False
+					underwater = False
+				}
+				WAYPOINT
+				{
+					type = WAYPOINT
+					names = The Badlands
+					celestialName = Kerbin
+					name = The Badlands
+					icon = ContractPacks/Tourism/Icons/Kerbal
+					latitude = -18.2225120529206
+					longitude = 49.735952772298802
+					altitude = 70000
+					index = 3
+					hidden = True
+					clustered = False
+					randomAltitude = False
+					underwater = False
+				}
+				WAYPOINT
+				{
+					type = WAYPOINT
+					names = The Northern Mountains
+					celestialName = Kerbin
+					name = The Northern Mountains
+					icon = ContractPacks/Tourism/Icons/Kerbal
+					latitude = 18.242622807065199
+					longitude = 70.285319526431806
+					altitude = 70000
+					index = 4
+					hidden = True
+					clustered = False
+					randomAltitude = False
+					underwater = False
+				}
+				WAYPOINT
+				{
+					type = WAYPOINT
+					names = K2
+					celestialName = Kerbin
+					name = K2
+					icon = ContractPacks/Tourism/Icons/Kerbal
+					latitude = 38.518448984288199
+					longitude = -59.545929130162797
+					altitude = 70000
+					index = 5
+					hidden = True
+					clustered = False
+					randomAltitude = False
+					underwater = False
+				}
+				WAYPOINT
+				{
+					type = WAYPOINT
+					names = The Southern Mountains
+					celestialName = Kerbin
+					name = The Southern Mountains
+					icon = ContractPacks/Tourism/Icons/Kerbal
+					latitude = -31.516051149218701
+					longitude = -9.9658291774491392
+					altitude = 70000
+					index = 6
+					hidden = True
+					clustered = False
+					randomAltitude = False
+					underwater = False
+				}
+				WAYPOINT
+				{
+					type = WAYPOINT
+					names = The Impact Crater
+					celestialName = Kerbin
+					name = The Impact Crater
+					icon = ContractPacks/Tourism/Icons/Kerbal
+					latitude = 8.6971398041987893
+					longitude = 180.04250810715399
+					altitude = 70000
+					index = 7
+					hidden = False
+					clustered = False
+					randomAltitude = False
+					underwater = False
+				}
+			}
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.Expression
+				CONTRACT_OFFERED
+				{
+				}
+				CONTRACT_ACCEPTED
+				{
+				}
+				CONTRACT_COMPLETED_SUCCESS
+				{
+					type = Double
+					TouristCount = TouristCount + 1
+					TouristLowOrbitCount = TouristLowOrbitCount + 1
+				}
+				CONTRACT_COMPLETED_FAILURE
+				{
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VesselParameterGroup
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = Tourism.Tourism_SubOrbital
+				title = Bring the tourist to the waypoint
+				notes = 
+				completedMessage = 
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = HasCrew
+					id = HasCrew
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = Tourism.Tourism_SubOrbital
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					trait = Pilot
+					minCrew = 1
+					maxCrew = 2147483647
+					minExperience = 0
+					maxExperience = 5
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Trait: Pilot
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Tourism.Tourism_SubOrbital
+						title = Trait: Pilot
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = CountParameterDelegate`1
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Tourism.Tourism_SubOrbital
+						title = Count: At least 1 
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = HasPassengers
+					id = HasPassengers
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = Tourism.Tourism_SubOrbital
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					index = 0
+					count = 0
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = Tourism.Tourism_SubOrbital
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Kerbin
+					situation = SUB_ORBITAL
+					minAltitude = 70000
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Tourism.Tourism_SubOrbital
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Sub-orbital trajectory
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Tourism.Tourism_SubOrbital
+						title = Situation: Sub-orbital trajectory
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Altitude: Above 70,000 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Tourism.Tourism_SubOrbital
+						title = Altitude: Above 70,000 m
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = VisitWaypoint
+					id = VisitWaypoint
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = Tourism.Tourism_SubOrbital
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					distance = 75000
+					horizontalDistance = 0
+					waypointIndex = 7
+					hideOnCompletion = True
+					showMessages = True
+				}
+			}
+			PARAM
+			{
+				name = RecoverKerbalCustom
+				id = RecoverKerbal
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = Tourism.Tourism_SubOrbital
+				title = 
+				notes = 
+				completedMessage = 
+				completeInSequence = True
+				count = 0
+				index = 0
+			}
+		}
+		CONTRACT
+		{
 			guid = f043289b-1a4b-4dd7-a2a7-33c8bd9da626
 			type = ConfiguredContract
 			prestige = 1
@@ -14732,669 +16084,24 @@ GAME
 		}
 		CONTRACT
 		{
-			guid = 14885d3c-7fb5-4d1a-857b-231b3d8d9232
-			type = ConfiguredContract
-			prestige = 1
-			seed = 2138557095
-			state = Offered
-			viewed = Unseen
-			agent = Kerbal Space Tourism
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 1394040,0,0,82253,0,0,1,50,21659985.9706865,0,0,0
-			subtype = Tourism_SubOrbital
-			title = Bring two tourists over the impact crater
-			description = Some tourists would like to see a specific sight from space.
-			synopsis = Bring two tourists high above the impact crater.
-			completedMessage = The tourists had a great time!
-			hash = -400713966
-			targetBody = Kerbin
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.SpawnPassengers
-				count = 2
-			}
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.WaypointGenerator
-				WAYPOINT
-				{
-					type = WAYPOINT
-					names = The North Pole
-					celestialName = Kerbin
-					name = The North Pole
-					icon = ContractPacks/Tourism/Icons/Kerbal
-					latitude = 86.761654329616306
-					longitude = 308.254415257669
-					altitude = 70000
-					index = 0
-					hidden = True
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-				WAYPOINT
-				{
-					type = WAYPOINT
-					names = The South Pole
-					celestialName = Kerbin
-					name = The South Pole
-					icon = ContractPacks/Tourism/Icons/Kerbal
-					latitude = -87.375163929960095
-					longitude = 49.251726151792603
-					altitude = 70000
-					index = 1
-					hidden = True
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-				WAYPOINT
-				{
-					type = WAYPOINT
-					names = The Great Desert
-					celestialName = Kerbin
-					name = The Great Desert
-					icon = ContractPacks/Tourism/Icons/Kerbal
-					latitude = 2.4902494069446099
-					longitude = 218.604135349567
-					altitude = 70000
-					index = 2
-					hidden = True
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-				WAYPOINT
-				{
-					type = WAYPOINT
-					names = The Badlands
-					celestialName = Kerbin
-					name = The Badlands
-					icon = ContractPacks/Tourism/Icons/Kerbal
-					latitude = -18.2225120529206
-					longitude = 49.735952772298802
-					altitude = 70000
-					index = 3
-					hidden = True
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-				WAYPOINT
-				{
-					type = WAYPOINT
-					names = The Northern Mountains
-					celestialName = Kerbin
-					name = The Northern Mountains
-					icon = ContractPacks/Tourism/Icons/Kerbal
-					latitude = 18.242622807065199
-					longitude = 70.285319526431806
-					altitude = 70000
-					index = 4
-					hidden = True
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-				WAYPOINT
-				{
-					type = WAYPOINT
-					names = K2
-					celestialName = Kerbin
-					name = K2
-					icon = ContractPacks/Tourism/Icons/Kerbal
-					latitude = 38.518448984288199
-					longitude = -59.545929130162797
-					altitude = 70000
-					index = 5
-					hidden = True
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-				WAYPOINT
-				{
-					type = WAYPOINT
-					names = The Southern Mountains
-					celestialName = Kerbin
-					name = The Southern Mountains
-					icon = ContractPacks/Tourism/Icons/Kerbal
-					latitude = -31.516051149218701
-					longitude = -9.9658291774491392
-					altitude = 70000
-					index = 6
-					hidden = True
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-				WAYPOINT
-				{
-					type = WAYPOINT
-					names = The Impact Crater
-					celestialName = Kerbin
-					name = The Impact Crater
-					icon = ContractPacks/Tourism/Icons/Kerbal
-					latitude = 8.6971398041987893
-					longitude = 180.04250810715399
-					altitude = 70000
-					index = 7
-					hidden = False
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-			}
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.Expression
-				CONTRACT_OFFERED
-				{
-				}
-				CONTRACT_ACCEPTED
-				{
-				}
-				CONTRACT_COMPLETED_SUCCESS
-				{
-					type = Double
-					TouristCount = TouristCount + 2
-					TouristLowOrbitCount = TouristLowOrbitCount + 2
-				}
-				CONTRACT_COMPLETED_FAILURE
-				{
-				}
-			}
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = VesselParameterGroup
-				state = Incomplete
-				values = 0,0,0,0,0
-				ContractIdentifier = Tourism.Tourism_SubOrbital
-				title = Bring the tourists to the waypoint
-				notes = 
-				completedMessage = 
-				duration = 0
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = False
-				PARAM
-				{
-					name = HasCrew
-					id = HasCrew
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = Tourism.Tourism_SubOrbital
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					trait = Pilot
-					minCrew = 1
-					maxCrew = 2147483647
-					minExperience = 0
-					maxExperience = 5
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Trait: Pilot
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Tourism.Tourism_SubOrbital
-						title = Trait: Pilot
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = CountParameterDelegate`1
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Tourism.Tourism_SubOrbital
-						title = Count: At least 1 
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = HasPassengers
-					id = HasPassengers
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = Tourism.Tourism_SubOrbital
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					index = 0
-					count = 0
-				}
-				PARAM
-				{
-					name = ReachState
-					id = ReachState
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = Tourism.Tourism_SubOrbital
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					targetBody = Kerbin
-					situation = SUB_ORBITAL
-					minAltitude = 70000
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: Kerbin
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Tourism.Tourism_SubOrbital
-						title = Destination: Kerbin
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Situation: Sub-orbital trajectory
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Tourism.Tourism_SubOrbital
-						title = Situation: Sub-orbital trajectory
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Altitude: Above 70,000 m
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Tourism.Tourism_SubOrbital
-						title = Altitude: Above 70,000 m
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = VisitWaypoint
-					id = VisitWaypoint
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = Tourism.Tourism_SubOrbital
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					distance = 75000
-					horizontalDistance = 0
-					waypointIndex = 7
-					hideOnCompletion = True
-					showMessages = True
-				}
-			}
-			PARAM
-			{
-				name = RecoverKerbalCustom
-				id = RecoverKerbal
-				state = Incomplete
-				values = 0,0,0,0,0
-				ContractIdentifier = Tourism.Tourism_SubOrbital
-				title = 
-				notes = 
-				completedMessage = 
-				completeInSequence = True
-				count = 0
-				index = 0
-			}
-		}
-		CONTRACT
-		{
-			guid = 5f44a993-6b28-4c44-9516-5e6640b9c7cb
-			type = ConfiguredContract
-			prestige = 1
-			seed = 1198064172
-			state = Offered
-			viewed = Unseen
-			agent = Space Penguins, Inc
-			deadlineType = Floating
-			expiryType = Floating
-			ignoresWeight = True
-			values = 1922220,39007358.7890625,7552,21349,25175,2,11,0,22243765.9706865,0,0,0
-			subtype = Kolniya Orbital Satellite
-			title = Orbit the first satellite in a Kolniya orbit around Minmus .
-			description = At Space Penguins, Inc, we're not afraid to try new things. As a result, we sometimes find ourselves in the situation of needing outside help to solve a problem. We want to know if Minmus is really a myth or not. So this is where you come in.
-			synopsis = Put a satellite in orbit around Minmus .
-			completedMessage = You did it! We've placed a satellite in orbit around Minmus !  This will be a day long remembered.
-			notes = Complete the following:
-			hash = 1167330049
-			targetBody = Minmus
-			UNIQUE_DATA
-			{
-				uid = String:KolniyaOrbitalSatellite:Minmus
-			}
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.OrbitGenerator
-				ORBIT_DETAIL
-				{
-					type = RANDOM_ORBIT
-					ORBIT
-					{
-						SMA = 263286.24686962436
-						ECC = 0.73678837833745148
-						INC = 116.59999999999999
-						LPE = 89.999999999999986
-						LAN = 0.4393847288746997
-						MNA = 1.9798970578738473
-						EPH = 0
-						REF = 3
-					}
-				}
-			}
-			PARAM
-			{
-				name = AlwaysTrue
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-			}
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = VPG_4
-				state = Incomplete
-				values = 0,0,0,0,0
-				ContractIdentifier = STGUnmannedMissions.Kolniya Orbital Satellite
-				title = 
-				notes = 
-				completedMessage = 
-				define = Satellite
-				duration = 0
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = False
-				PARAM
-				{
-					name = HasCrew
-					id = HasCrew_4
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = STGUnmannedMissions.Kolniya Orbital Satellite
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					minCrew = 0
-					maxCrew = 0
-					minExperience = 0
-					maxExperience = 5
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Unmanned
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = STGUnmannedMissions.Kolniya Orbital Satellite
-						title = Unmanned
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = OrbitParameter
-					id = KolniyaOrbit_4
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = STGUnmannedMissions.Kolniya Orbital Satellite
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					situation = 0
-					targetBody = Minmus
-					minAltitude = 0
-					minApoapsis = 0
-					minPeriapsis = 0
-					minEccentricity = 0
-					minInclination = 0
-					maxInclination = 180
-					minArgumentOfPeriapsis = 0
-					maxArgumentOfPeriapsis = 0
-					minPeriod = 0
-					displayNotes = True
-					deviationWindow = 3
-					ORBIT
-					{
-						SMA = 263286.24686962436
-						ECC = 0.73678837833745148
-						INC = 116.59999999999999
-						LPE = 89.999999999999986
-						LAN = 0.4393847288746997
-						MNA = 1.9798970578738473
-						EPH = 0
-						REF = 3
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: Minmus
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = STGUnmannedMissions.Kolniya Orbital Satellite
-						title = Destination: Minmus
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Reach the specified orbit
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = STGUnmannedMissions.Kolniya Orbital Satellite
-						title = Reach the specified orbit
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-		}
-		CONTRACT
-		{
-			guid = 0089650f-89ec-4589-b64e-bb9d134a3fe0
-			type = ConfiguredContract
-			prestige = 1
-			seed = 1427117790
-			state = Offered
-			viewed = Unseen
-			agent = Space Penguins, Inc
-			deadlineType = Floating
-			expiryType = Floating
-			ignoresWeight = True
-			values = 1549260,48241163.671875,8189,23509,27297,2,11,0,22242205.9706865,0,0,0
-			subtype = Equatorial OrbitalSat
-			title = Orbit the first satellite in an equatorial orbit around Minmus .
-			description = While working late nights, the scientists at Space Penguins, Inc have made a startling discovery. We may have underestimated just how volatile solid rocket fuel really is, and have now found ourselves with a problem we can't solve on our own. Now we need your help.
-			synopsis = Put a satellite in orbit around Minmus .
-			completedMessage = You did it! We've placed a satellite in orbit around Minmus !  This will be a day long remembered.
-			notes = Complete the following:
-			hash = 767845856
-			targetBody = Minmus
-			UNIQUE_DATA
-			{
-				uid = String:EquatorialOrbitalSatellite:Minmus
-			}
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.OrbitGenerator
-				ORBIT_DETAIL
-				{
-					type = RANDOM_ORBIT
-					ORBIT
-					{
-						SMA = 1156837.8781368639
-						ECC = 0.05565105368681552
-						INC = 180
-						LPE = 307.28702246550779
-						LAN = 0
-						MNA = 0.59204804821609847
-						EPH = 0
-						REF = 3
-					}
-				}
-			}
-			PARAM
-			{
-				name = AlwaysTrue
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-			}
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = VPG_4
-				state = Incomplete
-				values = 0,0,0,0,0
-				ContractIdentifier = STGUnmannedMissions.Equatorial OrbitalSat
-				title = 
-				notes = 
-				completedMessage = 
-				define = Satellite
-				duration = 0
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = False
-				PARAM
-				{
-					name = HasCrew
-					id = HasCrew_4
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = STGUnmannedMissions.Equatorial OrbitalSat
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					minCrew = 0
-					maxCrew = 0
-					minExperience = 0
-					maxExperience = 5
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Unmanned
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = STGUnmannedMissions.Equatorial OrbitalSat
-						title = Unmanned
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = OrbitParameter
-					id = EquatorialOrbit_4
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = STGUnmannedMissions.Equatorial OrbitalSat
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					situation = 0
-					targetBody = Minmus
-					minAltitude = 0
-					minApoapsis = 0
-					minPeriapsis = 0
-					minEccentricity = 0
-					minInclination = 0
-					maxInclination = 180
-					minArgumentOfPeriapsis = 0
-					maxArgumentOfPeriapsis = 0
-					minPeriod = 0
-					displayNotes = True
-					deviationWindow = 3
-					ORBIT
-					{
-						SMA = 1156837.8781368639
-						ECC = 0.05565105368681552
-						INC = 180
-						LPE = 307.28702246550779
-						LAN = 0
-						MNA = 0.59204804821609847
-						EPH = 0
-						REF = 3
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: Minmus
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = STGUnmannedMissions.Equatorial OrbitalSat
-						title = Destination: Minmus
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Reach the specified orbit
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = STGUnmannedMissions.Equatorial OrbitalSat
-						title = Reach the specified orbit
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-		}
-		CONTRACT
-		{
-			guid = 6f1d0f90-18c1-4643-8cc8-4d6f433f5d17
+			guid = 4c649c65-240e-412a-a9f4-5fa16fff85ef
 			type = ConfiguredContract
 			prestige = 2
-			seed = 1344846808
+			seed = 1700907199
 			state = Offered
 			viewed = Unseen
 			agent = Kerbal Space Tourism
 			deadlineType = None
 			expiryType = Floating
 			ignoresWeight = True
-			values = 532860,0,0,2270004,0,0,4,60,21244605.9706865,0,0,0
+			values = 573420,0,0,2386106,0,0,5,90,20662866.5405909,0,0,0
 			subtype = Tourism_GasGiantMoons
-			title = Grand tourist tour of Jool
-			description = A very wealthy tourist would like to do a tour of the moons of Jool.  He's willing to pay quite well for the trip.
-			synopsis = Fly by all of Jool's moons.
+			title = Grand tourist tour of Urlum
+			description = A very wealthy tourist would like to do a tour of the moons of Urlum.  He's willing to pay quite well for the trip.
+			synopsis = Fly by all of Urlum's moons.
 			completedMessage = The tourist had a great time!
 			hash = 64218576
-			targetBody = Jool
+			targetBody = Urlum
 			BEHAVIOUR
 			{
 				type = ContractConfigurator.Behaviour.SpawnPassengers
@@ -15426,7 +16133,7 @@ GAME
 				state = Incomplete
 				values = 0,0,0,0,0
 				ContractIdentifier = Tourism.Tourism_GasGiantMoons
-				title = Visit Jool's moons
+				title = Visit Urlum's moons
 				notes = 
 				completedMessage = 
 				duration = 0
@@ -15500,68 +16207,29 @@ GAME
 					notes = 
 					completedMessage = 
 					allowStateReset = False
-					targetBody = Laythe
-					maxAltitude = 250000
+					targetBody = Polta
+					maxAltitude = 110000
 					PARAM
 					{
 						name = ParameterDelegate`1
-						id = Destination: Laythe
+						id = Destination: Polta
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = Tourism.Tourism_GasGiantMoons
-						title = Destination: Laythe
+						title = Destination: Polta
 						notes = 
 						completedMessage = 
 					}
 					PARAM
 					{
 						name = ParameterDelegate`1
-						id = Altitude: Below 250,000 m
+						id = Altitude: Below 110,000 m
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = Tourism.Tourism_GasGiantMoons
-						title = Altitude: Below 250,000 m
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = ReachState
-					id = ReachState
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = Tourism.Tourism_GasGiantMoons
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = False
-					targetBody = Vall
-					maxAltitude = 150000
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: Vall
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Tourism.Tourism_GasGiantMoons
-						title = Destination: Vall
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Altitude: Below 150,000 m
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Tourism.Tourism_GasGiantMoons
-						title = Altitude: Below 150,000 m
+						title = Altitude: Below 110,000 m
 						notes = 
 						completedMessage = 
 					}
@@ -15578,68 +16246,29 @@ GAME
 					notes = 
 					completedMessage = 
 					allowStateReset = False
-					targetBody = Tylo
-					maxAltitude = 300000
+					targetBody = Priax
+					maxAltitude = 37000
 					PARAM
 					{
 						name = ParameterDelegate`1
-						id = Destination: Tylo
+						id = Destination: Priax
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = Tourism.Tourism_GasGiantMoons
-						title = Destination: Tylo
+						title = Destination: Priax
 						notes = 
 						completedMessage = 
 					}
 					PARAM
 					{
 						name = ParameterDelegate`1
-						id = Altitude: Below 300,000 m
+						id = Altitude: Below 37,000 m
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = Tourism.Tourism_GasGiantMoons
-						title = Altitude: Below 300,000 m
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = ReachState
-					id = ReachState
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = Tourism.Tourism_GasGiantMoons
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = False
-					targetBody = Bop
-					maxAltitude = 32500
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: Bop
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Tourism.Tourism_GasGiantMoons
-						title = Destination: Bop
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Altitude: Below 32,500 m
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Tourism.Tourism_GasGiantMoons
-						title = Altitude: Below 32,500 m
+						title = Altitude: Below 37,000 m
 						notes = 
 						completedMessage = 
 					}
@@ -15656,29 +16285,29 @@ GAME
 					notes = 
 					completedMessage = 
 					allowStateReset = False
-					targetBody = Pol
-					maxAltitude = 22000
+					targetBody = Wal
+					maxAltitude = 185000
 					PARAM
 					{
 						name = ParameterDelegate`1
-						id = Destination: Pol
+						id = Destination: Wal
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = Tourism.Tourism_GasGiantMoons
-						title = Destination: Pol
+						title = Destination: Wal
 						notes = 
 						completedMessage = 
 					}
 					PARAM
 					{
 						name = ParameterDelegate`1
-						id = Altitude: Below 22,000 m
+						id = Altitude: Below 185,000 m
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = Tourism.Tourism_GasGiantMoons
-						title = Altitude: Below 22,000 m
+						title = Altitude: Below 185,000 m
 						notes = 
 						completedMessage = 
 					}
@@ -15701,355 +16330,35 @@ GAME
 		}
 		CONTRACT
 		{
-			guid = 996d20ca-0d4e-475a-a429-d084a10d5ca9
-			type = ConfiguredContract
-			prestige = 1
-			seed = 1255420707
-			state = Offered
-			viewed = Unseen
-			agent = Field Research Team
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 674040,0,0,27476,0,0,9,0,21459985.9706865,0,0,0
-			subtype = FS_HardScience
-			title = Gather rare science results from Kerbin's Ice Caps
-			description = They say that it's difficult to find water at Kerbin's Ice Caps.  We've mapped out a few locations where there might be some.  Find a suitable spot and run some experiments.
-			synopsis = Run the requested experiments in while splashed down at Kerbin's Ice Caps.
-			completedMessage = This is some great data that we've accumulated!
-			hash = 1041133242
-			targetBody = Kerbin
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.WaypointGenerator
-				WAYPOINT
-				{
-					type = WAYPOINT
-					names = Suggested Ice Caps Splashdown
-					celestialName = Kerbin
-					name = Suggested Ice Caps Splashdown
-					icon = ContractPacks/FieldResearch/Icons/research
-					latitude = 71.5869140625
-					longitude = 260.9033203125
-					altitude = 0
-					index = 0
-					hidden = False
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-				WAYPOINT
-				{
-					type = WAYPOINT
-					names = Suggested Ice Caps Splashdown
-					celestialName = Kerbin
-					name = Suggested Ice Caps Splashdown
-					icon = ContractPacks/FieldResearch/Icons/research
-					latitude = -74.1357421875
-					longitude = 6.5478515625000009
-					altitude = 0
-					index = 1
-					hidden = False
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-				WAYPOINT
-				{
-					type = WAYPOINT
-					names = Suggested Ice Caps Splashdown
-					celestialName = Kerbin
-					name = Suggested Ice Caps Splashdown
-					icon = ContractPacks/FieldResearch/Icons/research
-					latitude = 0
-					longitude = 0
-					altitude = 0
-					index = 2
-					hidden = True
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-			}
-			PARAM
-			{
-				name = CollectScienceCustom
-				id = CollectScience
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = FieldResearch.FS_HardScience
-				title = 
-				notes = 
-				completedMessage = 
-				allowStateReset = False
-				targetBody = Kerbin
-				biome = IceCaps
-				situation = SrfSplashed
-				experiment = evaReport
-				experiment = mysteryGoo
-				experiment = mobileMaterialsLab
-				recoveryMethod = None
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Biome: Kerbin's Ice Caps
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_HardScience
-					title = Biome: Kerbin's Ice Caps
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Situation: Splashed down
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_HardScience
-					title = Situation: Splashed down
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Experiment: EVA Report
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_HardScience
-					title = Experiment: EVA Report
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = evaReportSubject
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = FieldResearch.FS_HardScience
-						title = 
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Experiment: Mystery Goo™ Observation
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_HardScience
-					title = Experiment: Mystery Goo™ Observation
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = mysteryGooSubject
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = FieldResearch.FS_HardScience
-						title = 
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Experiment: Materials Study
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_HardScience
-					title = Experiment: Materials Study
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = mobileMaterialsLabSubject
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = FieldResearch.FS_HardScience
-						title = 
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-		}
-		CONTRACT
-		{
-			guid = 3ff6b69b-2468-4948-b16b-e6ef1ab7169e
-			type = ConfiguredContract
-			prestige = 1
-			seed = 1204662909
-			state = Offered
-			viewed = Unseen
-			agent = Space Penguins, Inc
-			deadlineType = Floating
-			expiryType = Floating
-			ignoresWeight = True
-			values = 981300,48241163.671875,11672,34477,38908,4,17,0,21802245.9706865,0,0,0
-			subtype = First Orbital Satellite
-			title = Put a probe in orbit around the Mun
-			description = The number of times we've achieved sudden combustion at Space Penguins, Inc has lead us to consider something. We're trying to figure out if all matter in the universe is as dense as on Kerbin, but haven't come up with a conclusive test for it. So this is where you come in.
-			synopsis = Put a satellite in orbit around the Mun .
-			completedMessage = You did it! We've placed a satellite in orbit around the Mun !  This will be a day long remembered.
-			notes = Complete the following:
-			hash = 513944882
-			targetBody = Mun
-			UNIQUE_DATA
-			{
-				uid = String:FirstOrbitalSatellite:Mun
-			}
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = VPG_4
-				state = Incomplete
-				values = 0,0,0,0,0
-				ContractIdentifier = STGUnmannedMissions.First Orbital Satellite
-				title = 
-				notes = 
-				completedMessage = 
-				define = Satellite
-				duration = 0
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = False
-				PARAM
-				{
-					name = HasCrew
-					id = HasCrew_4
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = STGUnmannedMissions.First Orbital Satellite
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					minCrew = 0
-					maxCrew = 0
-					minExperience = 0
-					maxExperience = 5
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Unmanned
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = STGUnmannedMissions.First Orbital Satellite
-						title = Unmanned
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = OrbitParameter
-					id = Orbit_4
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = STGUnmannedMissions.First Orbital Satellite
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					situation = ORBITING
-					targetBody = Mun
-					minAltitude = 8000
-					minApoapsis = 0
-					minPeriapsis = 0
-					minEccentricity = 0
-					minInclination = 0
-					maxInclination = 180
-					minArgumentOfPeriapsis = 0
-					maxArgumentOfPeriapsis = 360
-					minPeriod = 0
-					displayNotes = False
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: The Mun
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = STGUnmannedMissions.First Orbital Satellite
-						title = Destination: The Mun
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Situation: Orbit
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = STGUnmannedMissions.First Orbital Satellite
-						title = Situation: Orbit
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Altitude: Above 8,000 m
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = STGUnmannedMissions.First Orbital Satellite
-						title = Altitude: Above 8,000 m
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-		}
-		CONTRACT
-		{
-			guid = 42e912aa-ce9f-411a-b241-2da16965ee61
+			guid = f6958400-95bd-4986-a852-1ac390f0d012
 			type = ConfiguredContract
 			prestige = 2
-			seed = 2114501696
+			seed = 1511620925
 			state = Offered
 			viewed = Unseen
 			agent = Field Research Team
 			deadlineType = None
 			expiryType = Floating
 			ignoresWeight = True
-			values = 1054320,0,0,97963,0,0,17,0,21971584.3313489,0,0,0
+			values = 1890420,0,0,69540,0,0,13,0,22012170.6860922,0,0,0
 			subtype = FS_Scientist
-			title = Help a scientist perform experiments at The Mun's Midlands.
-			description = Renowned scientist Nathan Kerman would like to perform some experiments near a specific location at The Mun's Midlands.  Wernher has strongly suggested that this scientist should be treated with the utmost respect, as they are a prominent member of the Society of Rocketologists.
-			synopsis = Bring Nathan Kerman to perform experiments near Sector MLV-9Z at The Mun's Midlands.
+			title = Help a scientist perform experiments at Minmus's Lowlands.
+			description = Renowned scientist Eilhat Kerman would like to perform some experiments near a specific location at Minmus's Lowlands.  Wernher has strongly suggested that this scientist should be treated with the utmost respect, as they are a prominent member of the Society of Rocketologists.
+			synopsis = Bring Eilhat Kerman to perform experiments near Zone 5KM6NF at Minmus's Lowlands.
 			completedMessage = Wernher is very pleased, he wouldn't have been able to attend the Rocketologist's gala if something had gone wrong!
 			hash = -158020673
-			targetBody = Mun
+			targetBody = Minmus
 			BEHAVIOUR
 			{
 				type = ContractConfigurator.Behaviour.WaypointGenerator
 				WAYPOINT
 				{
 					type = RANDOM_WAYPOINT
-					celestialName = Mun
-					name = Sector MLV-9Z
+					celestialName = Minmus
+					name = Zone 5KM6NF
 					icon = ContractPacks/FieldResearch/Icons/research
-					latitude = -19.303541524145565
-					longitude = 179.50274359411691
+					latitude = -39.821766724098623
+					longitude = 118.38163088000454
 					altitude = 0
 					index = 0
 					hidden = False
@@ -16064,8 +16373,8 @@ GAME
 				count = 1
 				KERBAL
 				{
-					name = Nathan Kerman
-					gender = Male
+					name = Eilhat Kerman
+					gender = Female
 					experienceTrait = Scientist
 					kerbalType = Crew
 				}
@@ -16077,7 +16386,7 @@ GAME
 				state = Incomplete
 				values = 0,0,0,0,0
 				ContractIdentifier = FieldResearch.FS_Scientist
-				title = Bring Nathan Kerman to the waypoint
+				title = Bring Eilhat Kerman to the waypoint
 				notes = 
 				completedMessage = 
 				duration = 0
@@ -16107,6 +16416,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Scientist
 						title = Trait: Pilot
 						notes = 
 						completedMessage = 
@@ -16117,6 +16427,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Scientist
 						title = Count: At least 1 
 						notes = 
 						completedMessage = 
@@ -16160,6 +16471,7 @@ GAME
 					name = CollectScienceCustom
 					id = CollectScience
 					state = Incomplete
+					disableOnStateChange = False
 					values = 0,0,0,0,0
 					ContractIdentifier = FieldResearch.FS_Scientist
 					title = Perform the experiments at the waypoint
@@ -16167,21 +16479,22 @@ GAME
 					completedMessage = 
 					completeInSequence = True
 					allowStateReset = False
-					targetBody = Mun
-					biome = Midlands
+					targetBody = Minmus
+					biome = Lowlands
 					situation = SrfLanded
-					experiment = crewReport
-					experiment = mysteryGoo
+					experiment = mobileMaterialsLab
 					experiment = temperatureScan
+					experiment = barometerScan
 					recoveryMethod = None
 					PARAM
 					{
 						name = ParameterDelegate`1
-						id = Biome: The Mun's Midlands
+						id = Biome: Minmus's Lowlands
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
-						title = Biome: The Mun's Midlands
+						ContractIdentifier = FieldResearch.FS_Scientist
+						title = Biome: Minmus's Lowlands
 						notes = 
 						completedMessage = 
 					}
@@ -16192,6 +16505,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Scientist
 						title = Situation: Landed
 						notes = 
 						completedMessage = 
@@ -16199,42 +16513,22 @@ GAME
 					PARAM
 					{
 						name = ParameterDelegate`1
-						id = Experiment: Crew Report
+						id = Experiment: Materials Study
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
-						title = Experiment: Crew Report
+						ContractIdentifier = FieldResearch.FS_Scientist
+						title = Experiment: Materials Study
 						notes = 
 						completedMessage = 
 						PARAM
 						{
 							name = ParameterDelegate`1
-							id = crewReportSubject
+							id = mobileMaterialsLabSubject
 							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
-							title = 
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Experiment: Mystery Goo™ Observation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Experiment: Mystery Goo™ Observation
-						notes = 
-						completedMessage = 
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = mysteryGooSubject
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
+							ContractIdentifier = FieldResearch.FS_Scientist
 							title = 
 							notes = 
 							completedMessage = 
@@ -16247,6 +16541,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Scientist
 						title = Experiment: Temperature Scan
 						notes = 
 						completedMessage = 
@@ -16257,6 +16552,31 @@ GAME
 							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
+							ContractIdentifier = FieldResearch.FS_Scientist
+							title = 
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Experiment: Atmospheric Pressure Scan
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Scientist
+						title = Experiment: Atmospheric Pressure Scan
+						notes = 
+						completedMessage = 
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = barometerScanSubject
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = FieldResearch.FS_Scientist
 							title = 
 							notes = 
 							completedMessage = 
@@ -16282,168 +16602,25 @@ GAME
 		}
 		CONTRACT
 		{
-			guid = 2ef37098-cff9-40c7-a6c6-37b177808a1d
-			type = ConfiguredContract
-			prestige = 1
-			seed = 844743958
-			state = Offered
-			viewed = Unseen
-			agent = Space Penguins, Inc
-			deadlineType = Floating
-			expiryType = Floating
-			ignoresWeight = True
-			values = 1912200,48241163.671875,23213,50300,77378,4,28,0,22829465.3713488,0,0,0
-			subtype = Targeted Unmanned Landing
-			title = Land a probe on the the Mun at a specified target!
-			description = The CEO (and chief bottle washer) at Space Penguins, Inc has stumbled on a problem. To test out some of our more advanced theories, we need more debris in low orbit. Now we need your help.
-			synopsis = Launch an unmanned probe and have it land on the the Mun
-			completedMessage = Future generations will remember this day.
-			notes = Complete the following:
-			hash = -989111454
-			targetBody = Mun
-			UNIQUE_DATA
-			{
-				uid = String:TargetedUnmannedLanding:Mun
-			}
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.WaypointGenerator
-				WAYPOINT
-				{
-					type = RANDOM_WAYPOINT
-					names = Impact Target
-					celestialName = Mun
-					name = Impact Target
-					icon = thermometer
-					latitude = -18.805929025802939
-					longitude = 70.401108567789692
-					altitude = 0
-					index = 0
-					hidden = False
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-			}
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = VPG__7
-				state = Incomplete
-				values = 0,0,0,0,0
-				ContractIdentifier = STGUnmannedMissions.Targeted Unmanned Landing
-				title = 
-				notes = 
-				completedMessage = 
-				duration = 0
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = False
-				PARAM
-				{
-					name = HasCrew
-					id = HasCrew_7
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = STGUnmannedMissions.Targeted Unmanned Landing
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					minCrew = 0
-					maxCrew = 0
-					minExperience = 0
-					maxExperience = 5
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Unmanned
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Unmanned
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = VisitWaypoint
-					id = VisitWaypoint_8
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = STGUnmannedMissions.Targeted Unmanned Landing
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					distance = 5000
-					horizontalDistance = 0
-					waypointIndex = 0
-					hideOnCompletion = True
-					showMessages = False
-				}
-				PARAM
-				{
-					name = ReachState
-					id = ReachState_7
-					state = Incomplete
-					values = 0,0,0,0,0
-					ContractIdentifier = STGUnmannedMissions.Targeted Unmanned Landing
-					title = 
-					notes = 
-					completedMessage = 
-					completeInSequence = True
-					allowStateReset = False
-					targetBody = Mun
-					situation = LANDED
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: The Mun
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Destination: The Mun
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Situation: Landed
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Situation: Landed
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-		}
-		CONTRACT
-		{
-			guid = 5e5c0923-36e3-48f8-a925-d5ad6897c001
+			guid = 25ba6dc6-3f2b-4cdd-9466-3d11b0d97782
 			type = ConfiguredContract
 			prestige = 0
-			seed = 1519403970
+			seed = 2002320450
 			state = Offered
 			viewed = Unseen
-			agent = Probodobodyne Inc
+			agent = Moving Parts Experts Group
 			deadlineType = Floating
 			expiryType = Floating
 			ignoresWeight = True
-			values = 175680,4337987.36572266,21775,60281,109348,0,7,8,21092946.5113488,0,0,0
+			values = 171600,6061293.67675781,31943,97339,156719,0,10,17,20293357.806092,0,0,0
 			subtype = SAB_Homeworld_Child_Relay_Tier1
-			title = Launch a tier 1 relay around Minmus.
-			description = The board of directors at Probodobodyne Inc have raised some troubling issues. To test out some of our more advanced theories, we need more debris in low orbit. We believe that you are much better positioned to deal with this than us.
-			synopsis = We want you to build a new relay satellite with at least 4 G power (such as the HG-5R or HG-55R antenna) and place it into stationary orbit around Minmus.
-			completedMessage = Success! The relay satellite is up and running around Minmus.
+			title = Launch a tier 1 relay around the Mun.
+			description = As a consequence of a somewhat worse than average accident at Moving Parts Experts Group, we've been forced to look for some outside help. To test out some of our more advanced theories, we need more debris in low orbit. So this is where you come in.
+			synopsis = We want you to build a new relay satellite with at least 4 G power (such as the HG-5R or HG-55R antenna) and place it into stationary orbit around the Mun.
+			completedMessage = Success! The relay satellite is up and running around the Mun.
 			notes = Please note that this must be a new relay satellite, constructed after the contract is accepted.
 			hash = -1505786154
-			targetBody = Minmus
+			targetBody = Mun
 			BEHAVIOUR
 			{
 				type = ContractConfigurator.Behaviour.OrbitGenerator
@@ -16452,14 +16629,14 @@ GAME
 					type = RANDOM_ORBIT
 					ORBIT
 					{
-						SMA = 1345386.7141759307
-						ECC = 0.11585426270508552
-						INC = 175.32688953230482
-						LPE = 5.2030288452299143
-						LAN = 101.35528580348716
-						MNA = 1.6103081178831451
+						SMA = 1560022.8345358581
+						ECC = 0.07207952797005901
+						INC = 7.5821085542357141
+						LPE = 250.73145462699767
+						LAN = 87.164049487171724
+						MNA = -0.16781176507250373
 						EPH = 0
-						REF = 3
+						REF = 2
 					}
 				}
 			}
@@ -16483,18 +16660,6 @@ GAME
 				duration = 324000
 				dissassociateVesselsOnContractFailure = True
 				dissassociateVesselsOnContractCompletion = True
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Duration: 15 days
-					optional = True
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Duration: 15 days
-					notes = 
-					completedMessage = 
-				}
 				PARAM
 				{
 					name = NewVessel
@@ -16534,6 +16699,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
 						title = Resource Capacity: ElectricCharge: At least 1200 units
 						notes = 
 						completedMessage = 
@@ -16579,6 +16745,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
 						title = With module: SAS
 						notes = 
 						completedMessage = 
@@ -16589,6 +16756,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
 						title = Count: At least 1 
 						notes = 
 						completedMessage = 
@@ -16620,6 +16788,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
 						title = With module: Command
 						notes = 
 						completedMessage = 
@@ -16630,6 +16799,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
 						title = Count: At least 1 
 						notes = 
 						completedMessage = 
@@ -16675,6 +16845,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
 						title = Resource: ElectricCharge: At least 120 units
 						notes = 
 						completedMessage = 
@@ -16693,7 +16864,7 @@ GAME
 					completedMessage = 
 					allowStateReset = True
 					situation = 0
-					targetBody = Minmus
+					targetBody = Mun
 					minAltitude = 0
 					minApoapsis = 0
 					minPeriapsis = 0
@@ -16707,23 +16878,24 @@ GAME
 					deviationWindow = 0.40000000000000002
 					ORBIT
 					{
-						SMA = 1345386.7141759307
-						ECC = 0.11585426270508552
-						INC = 175.32688953230482
-						LPE = 5.2030288452299143
-						LAN = 101.35528580348716
-						MNA = 1.6103081178831451
+						SMA = 1560022.8345358581
+						ECC = 0.07207952797005901
+						INC = 7.5821085542357141
+						LPE = 250.73145462699767
+						LAN = 87.164049487171724
+						MNA = -0.16781176507250373
 						EPH = 0
-						REF = 3
+						REF = 2
 					}
 					PARAM
 					{
 						name = ParameterDelegate`1
-						id = Destination: Minmus
+						id = Destination: The Mun
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
-						title = Destination: Minmus
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+						title = Destination: The Mun
 						notes = 
 						completedMessage = 
 					}
@@ -16734,6 +16906,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
 						title = Reach the specified orbit
 						notes = 
 						completedMessage = 
@@ -16751,16 +16924,17 @@ GAME
 					notes = 
 					completedMessage = 
 					allowStateReset = True
-					targetBody = Minmus
+					targetBody = Mun
 					maxAcceleration = 0.200000003
 					PARAM
 					{
 						name = ParameterDelegate`1
-						id = Destination: Minmus
+						id = Destination: The Mun
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
-						title = Destination: Minmus
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+						title = Destination: The Mun
 						notes = 
 						completedMessage = 
 					}
@@ -16771,7 +16945,280 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
 						title = Acceleration: Less than 0.2 gees
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Duration: 15 days
+					optional = True
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+					title = Duration: 15 days
+					notes = 
+					completedMessage = 
+				}
+			}
+		}
+		CONTRACT
+		{
+			guid = faa33f58-95d2-4fd4-a502-31daf9878852
+			type = ConfiguredContract
+			prestige = 1
+			seed = 124301611
+			state = Offered
+			viewed = Unseen
+			agent = Field Research Team
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 2097960,0,0,17149,0,0,4,0,22220073.1660841,0,0,0
+			subtype = FS_Experiment
+			title = Perform Temperature scan experiments on Minmus
+			description = Wernher is especially excited to try some temperature scan experiments at various locations on Minmus.  We doubt the results will be much different from the last study Wernher commissioned...  but he's the boss!
+			synopsis = Run the temperature scan experiments on Minmus.
+			completedMessage = Yup, that's definitely a lot of temperature scan results.  Just put the data in a spreadsheet and we'll look at it later.
+			hash = 1723975082
+			targetBody = Minmus
+			UNIQUE_DATA
+			{
+				experiment = ScienceExperiment:temperatureScan
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 9714,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_Experiment
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Minmus
+				biome = Highlands
+				situation = SrfLanded
+				experiment = temperatureScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Minmus's Highlands
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Biome: Minmus's Highlands
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Temperature Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Experiment: Temperature Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = temperatureScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = Recovery: Recover
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 8208,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_Experiment
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Minmus
+				biome = GreatFlats
+				situation = SrfLanded
+				experiment = temperatureScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Minmus's Great Flats
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Biome: Minmus's Great Flats
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Temperature Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Experiment: Temperature Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = temperatureScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = Recovery: Recover
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 10685,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_Experiment
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Minmus
+				biome = Poles
+				situation = SrfLanded
+				experiment = temperatureScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Minmus's Poles
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Biome: Minmus's Poles
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Temperature Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Experiment: Temperature Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = temperatureScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = Recovery: Recover
 						notes = 
 						completedMessage = 
 					}
@@ -16804,7 +17251,7 @@ GAME
 		{
 			key = Satellite
 			id = d760a84f-957b-478a-bf59-b542e0feec5e
-			hash = 184740462
+			hash = 76186175
 		}
 	}
 	SCENARIO
@@ -25834,7 +26281,7 @@ GAME
 					launchpadID = 0
 					id = SpaceCenter/ResearchAndDevelopment
 					commonName = ResearchAndDevelopment
-					progress = 12801809.40353886
+					progress = 11063781.899128286
 					BP = 14246052.084700515
 					cost = 902000
 					UpgradeProcessed = False
@@ -25847,9 +26294,22 @@ GAME
 					launchpadID = 0
 					id = SpaceCenter/SpaceplaneHangar
 					commonName = SpaceplaneHangar
-					progress = 9389607.0525637809
+					progress = 7651579.5481532039
 					BP = 10062305.898749053
 					cost = 450000
+					UpgradeProcessed = False
+					isLaunchpad = False
+				}
+				UpgradingBuilding
+				{
+					upgradeLevel = 1
+					currentLevel = 0
+					launchpadID = 0
+					id = SpaceCenter/Runway
+					commonName = Runway
+					progress = 4268663.4701476758
+					BP = 5809475.01931113
+					cost = 150000
 					UpgradeProcessed = False
 					isLaunchpad = False
 				}
@@ -25984,9 +26444,9 @@ GAME
 					TargetObjectStorage = 
 					ContractGUIDStorage = 00000000-0000-0000-0000-000000000000
 					ContractAlarmType = Expire
-					Triggered = True
-					Actioned = True
-					AlarmWindowClosed = True
+					Triggered = False
+					Actioned = False
+					AlarmWindowClosed = False
 					Actions
 					{
 						Warp = DoNothing
@@ -25998,11 +26458,11 @@ GAME
 				Item
 				{
 					VesselID = 
-					ID = 3de512c04ee34a49956615f01a9519c6
+					ID = 5b1f6bf7914a4218950a9628e0640c38
 					Name = [KAC] Kerbin->Moho
 					NotesStorage = 
 					TypeOfAlarm = TransferModelled
-					AlarmTimeStorage = 23320407
+					AlarmTimeStorage = 20870947
 					AlarmMarginSecs = 0
 					Enabled = True
 					AlarmAction = Converted
@@ -26030,52 +26490,20 @@ GAME
 				Item
 				{
 					VesselID = 18731f05-dcdf-4280-8291-aee1882dcf40
-					ID = b5b668ae2f574147adb38d1597bc3841
-					Name = Pistachio Dumpster DeF Trans Dres Injection
-					NotesStorage = 
-					TypeOfAlarm = Maneuver
-					AlarmTimeStorage = 20951137.723468464
-					AlarmMarginSecs = 900
-					Enabled = True
-					AlarmAction = Converted
-					AlarmActionConverted = True
-					ManNodesStorage = 20952037.7234685,0,32.048625951151,1530.39405059485,0.0005131804,0.1096603,-0.0003176454,0.993969,23403541.0350771,0,-0.840688712908602,0.270831805030494,-0.000536135,-0.6500591,0.000215905,0.7598835
-					XferOriginBodyName = 
-					XferTargetBodyName = 
-					RepeatAlarm = False
-					RepeatAlarmPeriodStorage = 0
-					PlaySound = False
-					TargetObjectStorage = 
-					ContractGUIDStorage = 00000000-0000-0000-0000-000000000000
-					ContractAlarmType = Expire
-					Triggered = True
-					Actioned = True
-					AlarmWindowClosed = False
-					Actions
-					{
-						Warp = KillWarp
-						Message = YesIfOtherVessel
-						DeleteWhenDone = False
-						PlaySound = False
-					}
-				}
-				Item
-				{
-					VesselID = 
-					ID = af3e85989cfb465680f5f6a1f480bc83
-					Name = [KAC] Kerbin->Dres
-					NotesStorage = 
-					TypeOfAlarm = TransferModelled
-					AlarmTimeStorage = 32432355
-					AlarmMarginSecs = 60
+					ID = d3bcc2405a6b4470a53196ac15852b95
+					Name = Plan Dres Fly-by
+					NotesStorage = Time to pay attention to:\r    Pistachio Dumpster DeF\rRaw Time Alarm
+					TypeOfAlarm = Raw
+					AlarmTimeStorage = 20902898.596102495
+					AlarmMarginSecs = 0
 					Enabled = True
 					AlarmAction = Converted
 					AlarmActionConverted = True
 					ManNodesStorage = 
-					XferOriginBodyName = Kerbin
-					XferTargetBodyName = Dres
-					RepeatAlarm = True
-					RepeatAlarmPeriodStorage = 0
+					XferOriginBodyName = 
+					XferTargetBodyName = 
+					RepeatAlarm = False
+					RepeatAlarmPeriodStorage = 1080000
 					PlaySound = False
 					TargetObjectStorage = 
 					ContractGUIDStorage = 00000000-0000-0000-0000-000000000000
@@ -26085,8 +26513,8 @@ GAME
 					AlarmWindowClosed = False
 					Actions
 					{
-						Warp = DoNothing
-						Message = No
+						Warp = KillWarp
+						Message = YesIfOtherVessel
 						DeleteWhenDone = False
 						PlaySound = False
 					}
@@ -31917,7 +32345,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.3.0
-		UT = 20951139.110885676
+		UT = 20123506.946052939
 		activeVessel = 0
 		mapViewFiltering = 8190
 		commNetUIModeTracking = Network
@@ -42514,11 +42942,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 14.455900399714773
-				LPE = 90
-				LAN = 30.249374497930432
+				INC = 14.455900399711004
+				LPE = 90.000000000000014
+				LAN = 151.54883238249749
 				MNA = 0
-				EPH = 20917260.15134896
+				EPH = 20122872.646067116
 				REF = 3
 			}
 			PART
@@ -44157,13 +44585,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
-				INC = 23.231063560806774
+				INC = 23.231063560806511
 				LPE = 90
-				LAN = 220.58090930354564
+				LAN = 341.88036718811384
 				MNA = 0
-				EPH = 20917260.15134896
+				EPH = 20122872.646067116
 				REF = 3
 			}
 			PART
@@ -44324,13 +44752,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = NaN
-				ECC = 1
-				INC = 3.220107739307227
+				SMA = 32027.193308598708
+				ECC = 0.99999999999999989
+				INC = 3.220107739316513
 				LPE = 270
-				LAN = 116.90367543864699
-				MNA = 0
-				EPH = 20917260.15134896
+				LAN = 238.20313332322377
+				MNA = 3.1415926207170166
+				EPH = 20122872.646067116
 				REF = 3
 			}
 			PART
@@ -46752,13 +47180,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
-				INC = 12.020921746289686
+				INC = 12.020921746289808
 				LPE = 270
-				LAN = 173.67952957005684
+				LAN = 276.04176516839544
 				MNA = 0
-				EPH = 20917260.15134896
+				EPH = 20122872.646067116
 				REF = 2
 			}
 			PART
@@ -61291,13 +61719,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 30000.160003063582
-				ECC = 0.99999999999999989
-				INC = 6.173402290242584
+				SMA = NaN
+				ECC = 1
+				INC = 6.1734022902423469
 				LPE = 270
-				LAN = 47.697281002829527
-				MNA = 3.1415926207170166
-				EPH = 20917260.15134896
+				LAN = 168.99673888739721
+				MNA = 0
+				EPH = 20122872.646067116
 				REF = 3
 			}
 			PART
@@ -65422,33 +65850,33 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 801843.44653018191
+			met = 499.33101063594222
 			lct = 20103291.205089804
-			lastUT = 20905134.651619986
+			lastUT = 20103790.53610044
 			root = 0
-			lat = -0.027504057795841898
-			lon = -109.23953925360303
-			alt = 84614.096186698764
+			lat = 0.011992311708808016
+			lon = -8.7398283328442918
+			alt = 86374.011472540558
 			hgt = -1
-			nrm = -0.448476672,-0.893777013,0.00558644533
-			rot = -0.277687609,-0.653179467,-0.649145603,0.273598492
-			CoM = 1.78813934E-06,-2.91898298,-1.90734863E-06
+			nrm = -0.800638795,0.599130929,0.00444447994
+			rot = -0.275755465,-0.653980613,-0.649973333,0.271666944
+			CoM = -4.76837158E-07,-2.91898227,-1.66893005E-06
 			stg = 0
 			prst = False
-			ref = 0
+			ref = 3315253266
 			ctrl = True
 			cPch = 
 			cHdg = 
 			cMod = 0
 			ORBIT
 			{
-				SMA = 686966.88770577055
-				ECC = 0.0049140806621279605
-				INC = 0.069159715291286089
-				LPE = 290.48475153467842
-				LAN = 40.81751056524962
-				MNA = 0.79720191487233183
-				EPH = 20905134.651619986
+				SMA = 687003.31329653191
+				ECC = 0.0049046645304726593
+				INC = 0.069158536077790184
+				LPE = 290.50319974860975
+				LAN = 40.81751128121914
+				MNA = 1.3775839652597539
+				EPH = 20103790.53610044
 				REF = 1
 			}
 			PART
@@ -65475,8 +65903,8 @@ GAME
 				attN = bottom, 4
 				mass = 0.200000003
 				shielded = False
-				temp = 93.110941962950719
-				tempExt = 93.235436604308546
+				temp = 304.8963079595934
+				tempExt = 304.24627410600885
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -65484,7 +65912,7 @@ GAME
 				autostrutMode = Off
 				rigidAttachment = False
 				flag = ThreePounds/Flags/logo
-				rTrf = science.module (Pistachio Dumpster DeF)
+				rTrf = science.module
 				modCost = 0
 				EVENTS
 				{
@@ -65569,8 +65997,8 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.200000003
 				shielded = False
-				temp = 94.127483632254936
-				tempExt = 94.431330972789794
+				temp = 304.85303824912614
+				tempExt = 304.62363010558147
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -65593,10 +66021,10 @@ GAME
 				{
 					name = ModuleDeployableAntenna
 					isEnabled = True
-					currentRotation = (6.1232336E-17, 1, -6.1232336E-17, -7.55001537E-08)
+					currentRotation = (-2.03547121E-15, 0.130526185, 3.80981887E-17, -0.991444886)
 					storedAnimationTime = 0
-					storedAnimationSpeed = -1
-					deployState = RETRACTED
+					storedAnimationSpeed = 1
+					deployState = EXTENDED
 					stagingEnabled = True
 					EVENTS
 					{
@@ -65626,7 +66054,7 @@ GAME
 					isEnabled = True
 					xmitIncomplete = False
 					stagingEnabled = True
-					canComm = False
+					canComm = True
 					EVENTS
 					{
 					}
@@ -65697,8 +66125,8 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.0299999993
 				shielded = False
-				temp = 89.187891072799403
-				tempExt = 89.190223794805505
+				temp = 292.44798648812235
+				tempExt = 292.31657504737257
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -65769,8 +66197,8 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.0299999993
 				shielded = False
-				temp = 91.643492466644489
-				tempExt = 91.658470535305014
+				temp = 292.62484620488067
+				tempExt = 292.496603297999
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -65842,8 +66270,8 @@ GAME
 				attN = bottom, 0
 				mass = 0.0399999991
 				shielded = False
-				temp = 92.022828526350054
-				tempExt = 92.179076486840657
+				temp = 305.10367360734472
+				tempExt = 304.47092761184501
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -65887,8 +66315,8 @@ GAME
 				attN = top, 4
 				mass = 0.100000001
 				shielded = False
-				temp = 90.739716563715888
-				tempExt = 91.310557810465014
+				temp = 305.33599197315436
+				tempExt = 304.81159750635794
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -65934,7 +66362,7 @@ GAME
 					isEnabled = True
 					actuatorModeCycle = 0
 					authorityLimiter = 100
-					stateString = Idle
+					stateString = Running
 					stagingEnabled = True
 					WheelState = Active
 					EVENTS
@@ -66079,8 +66507,8 @@ GAME
 				attN = top, -1
 				mass = 0.125
 				shielded = False
-				temp = 91.091654291369281
-				tempExt = 91.233385232430066
+				temp = 304.73108694037734
+				tempExt = 304.2375408600322
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -66123,8 +66551,8 @@ GAME
 				srfN = srfAttach, 6
 				mass = 0.00499999989
 				shielded = False
-				temp = 91.095681390489474
-				tempExt = 91.176696306725418
+				temp = 304.69898058586745
+				tempExt = 304.17860859074949
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -66203,8 +66631,8 @@ GAME
 				srfN = srfAttach, 6
 				mass = 0.00499999989
 				shielded = False
-				temp = 91.095681390489474
-				tempExt = 91.176696306725418
+				temp = 304.69496743233645
+				tempExt = 304.08723758284623
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -66283,8 +66711,8 @@ GAME
 				srfN = srfAttach, 6
 				mass = 0.00499999989
 				shielded = False
-				temp = 91.096092616267327
-				tempExt = 91.189160043212595
+				temp = 304.69496743237721
+				tempExt = 304.08723758288562
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -66363,8 +66791,8 @@ GAME
 				srfN = srfAttach, 6
 				mass = 0.00499999989
 				shielded = False
-				temp = 91.095681390489474
-				tempExt = 91.176696306725418
+				temp = 304.69785960947547
+				tempExt = 304.15287067772829
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -66443,8 +66871,8 @@ GAME
 				srfN = srfAttach, 6
 				mass = 0.0500000007
 				shielded = False
-				temp = 91.099552906136793
-				tempExt = 91.325065165274282
+				temp = 304.58889837868378
+				tempExt = 304.11684556543912
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -66540,8 +66968,8 @@ GAME
 				attN = top, -1
 				mass = 0.125
 				shielded = False
-				temp = 91.091809277776719
-				tempExt = 91.228253868666954
+				temp = 304.71659073699226
+				tempExt = 304.21255820267402
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -66584,8 +67012,8 @@ GAME
 				srfN = srfAttach, 12
 				mass = 0.00499999989
 				shielded = False
-				temp = 91.096907067641538
-				tempExt = 91.197089595958147
+				temp = 304.68561576673244
+				tempExt = 304.1952033208438
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -66664,8 +67092,8 @@ GAME
 				srfN = srfAttach, 12
 				mass = 0.00499999989
 				shielded = False
-				temp = 91.09612516502294
-				tempExt = 91.173548015030093
+				temp = 304.68142409285707
+				tempExt = 304.10038535175488
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -66744,8 +67172,8 @@ GAME
 				srfN = srfAttach, 12
 				mass = 0.00499999989
 				shielded = False
-				temp = 91.09612516502294
-				tempExt = 91.173548015030093
+				temp = 304.68444697949707
+				tempExt = 304.16882433288993
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -66824,8 +67252,8 @@ GAME
 				srfN = srfAttach, 12
 				mass = 0.00499999989
 				shielded = False
-				temp = 91.09612516502294
-				tempExt = 91.173548015030093
+				temp = 304.67992179994206
+				tempExt = 304.06576461424555
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -66904,8 +67332,8 @@ GAME
 				srfN = srfAttach, 12
 				mass = 0.0500000007
 				shielded = False
-				temp = 91.101226198010693
-				tempExt = 91.34241664274137
+				temp = 304.56605963536697
+				tempExt = 304.04508973177968
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -66999,8 +67427,8 @@ GAME
 				srfN = srfAttach, 5
 				mass = 0.00499999989
 				shielded = False
-				temp = 91.099152452120293
-				tempExt = 91.223114197424664
+				temp = 305.25569996744673
+				tempExt = 304.64786226493061
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -67054,8 +67482,8 @@ GAME
 				srfN = srfAttach, 5
 				mass = 0.00499999989
 				shielded = False
-				temp = 91.099152452120293
-				tempExt = 91.223114197424664
+				temp = 305.25606549815103
+				tempExt = 304.65166521737723
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -67110,8 +67538,8 @@ GAME
 				attN = top, 5
 				mass = 0.125
 				shielded = False
-				temp = 90.581268142953277
-				tempExt = 91.021668766149233
+				temp = 306.67839543900396
+				tempExt = 307.17492243898357
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -67173,8 +67601,8 @@ GAME
 				attN = interstage08u, -1
 				mass = 0.0565311238
 				shielded = False
-				temp = 90.544644111466781
-				tempExt = 91.183761754144868
+				temp = 310.08775284669565
+				tempExt = 309.25286769833212
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -67316,8 +67744,8 @@ GAME
 				attN = bottom, 23
 				mass = 0.25
 				shielded = False
-				temp = 90.519526994610601
-				tempExt = 91.088432064926764
+				temp = 310.7702154936614
+				tempExt = 309.72246459923269
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -67431,8 +67859,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.5
 				shielded = False
-				temp = 90.569807461918913
-				tempExt = 90.925325457538662
+				temp = 310.71725447328862
+				tempExt = 309.9888169041123
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -67621,8 +68049,8 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.00499999989
 				shielded = False
-				temp = 93.102649425212448
-				tempExt = 93.187310316620312
+				temp = 304.8085885524012
+				tempExt = 304.1495058529693
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -67710,8 +68138,8 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.00499999989
 				shielded = False
-				temp = 93.113915660980439
-				tempExt = 93.204225047379083
+				temp = 304.80276036098581
+				tempExt = 304.17967260757678
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -67783,7 +68211,7 @@ GAME
 				Gear = False, 0
 				Light = False, 0
 				RCS = False, 0
-				SAS = False, 20904791.0719625
+				SAS = True, 20103273.2250902
 				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
@@ -67807,22 +68235,12 @@ GAME
 			}
 			FLIGHTPLAN
 			{
-				MANEUVER
-				{
-					UT = 20952037.723468464
-					dV = 0,32.048625951151003,1530.394050594846
-				}
-			}
-			TARGET
-			{
-				type = CelestialBody
-				tgtId = Dres
 			}
 			CTRLSTATE
 			{
 				pitch = 0
-				yaw = 0
-				roll = 0
+				yaw = 1.10917481E-05
+				roll = 2.48415267E-06
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
@@ -70605,124 +71023,12 @@ GAME
 		}
 		KERBAL
 		{
-			name = Kalin Kerman
+			name = Jawig Kerman
 			gender = Female
-			type = Unowned
-			trait = Pilot
-			brave = 0.0279616918
-			dumb = 0.630235791
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Geofburry Kerman
-			gender = Male
-			type = Unowned
-			trait = Engineer
-			brave = 0.604257226
-			dumb = 0.354207426
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Roskin Kerman
-			gender = Female
-			type = Unowned
-			trait = Engineer
-			brave = 0.344092399
-			dumb = 0.610132039
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Nataoly Kerman
-			gender = Female
-			type = Unowned
-			trait = Pilot
-			brave = 0.542835653
-			dumb = 0.52965188
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Diltop Kerman
-			gender = Male
 			type = Unowned
 			trait = Scientist
-			brave = 0.167419717
-			dumb = 0.597347796
+			brave = 0.182391956
+			dumb = 0.603637218
 			badS = False
 			veteran = False
 			tour = False

@@ -194,7 +194,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 20951131.29182807
+		update = 20917259.651348971
 		version = 1.3.0
 		WEIGHTS
 		{
@@ -4574,7 +4574,7 @@ GAME
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Relay_Tier1
-							title = Count: At least 1 
+							title = Count: At least 1
 							notes = 
 							completedMessage = 
 						}
@@ -4691,7 +4691,7 @@ GAME
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Relay_Tier1
-							title = Count: At least 1 
+							title = Count: At least 1
 							notes = 
 							completedMessage = 
 						}
@@ -5539,7 +5539,7 @@ GAME
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Relay_Tier1
-							title = Count: At least 1 
+							title = Count: At least 1
 							notes = 
 							completedMessage = 
 						}
@@ -5661,7 +5661,7 @@ GAME
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Relay_Tier1
-							title = Count: At least 1 
+							title = Count: At least 1
 							notes = 
 							completedMessage = 
 						}
@@ -7260,7 +7260,7 @@ GAME
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = Tourism.Tourism_FirstTourist
-							title = Count: At least 1 
+							title = Count: At least 1
 							notes = 
 							completedMessage = 
 						}
@@ -8958,7 +8958,7 @@ GAME
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = StockAntennaBalance.SAB_Homeworld_PolarRelay_Tier1
-							title = Count: At least 1 
+							title = Count: At least 1
 							notes = 
 							completedMessage = 
 						}
@@ -9144,7 +9144,7 @@ GAME
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = StockAntennaBalance.SAB_Homeworld_PolarRelay_Tier1
-							title = Count: At least 1 
+							title = Count: At least 1
 							notes = 
 							completedMessage = 
 						}
@@ -13124,7 +13124,7 @@ GAME
 	{
 		name = SentinelScenario
 		scene = 7, 8, 5
-		NextSpawnTime = 20960164.590984117
+		NextSpawnTime = 20934342.500537504
 	}
 	SCENARIO
 	{
@@ -13310,7 +13310,7 @@ GAME
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_PolarRelay_Tier1
-						title = Count: At least 1 
+						title = Count: At least 1
 						notes = 
 						completedMessage = 
 					}
@@ -13353,7 +13353,7 @@ GAME
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_PolarRelay_Tier1
-						title = Count: At least 1 
+						title = Count: At least 1
 						notes = 
 						completedMessage = 
 					}
@@ -14289,7 +14289,7 @@ GAME
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = Tourism.Tourism_LowOrbit
-						title = Count: At least 1 
+						title = Count: At least 1
 						notes = 
 						completedMessage = 
 					}
@@ -14624,7 +14624,7 @@ GAME
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = Tourism.Tourism_SubOrbital
-						title = Count: At least 1 
+						title = Count: At least 1
 						notes = 
 						completedMessage = 
 					}
@@ -14728,6 +14728,537 @@ GAME
 				completeInSequence = True
 				count = 0
 				index = 0
+			}
+		}
+		CONTRACT
+		{
+			guid = f6958400-95bd-4986-a852-1ac390f0d012
+			type = ConfiguredContract
+			prestige = 2
+			seed = 1511620925
+			state = Offered
+			viewed = Unseen
+			agent = Field Research Team
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 1890420,0,0,69540,0,0,13,0,22012170.6860922,0,0,0
+			subtype = FS_Scientist
+			title = Help a scientist perform experiments at Minmus's Lowlands.
+			description = Renowned scientist Eilhat Kerman would like to perform some experiments near a specific location at Minmus's Lowlands.  Wernher has strongly suggested that this scientist should be treated with the utmost respect, as they are a prominent member of the Society of Rocketologists.
+			synopsis = Bring Eilhat Kerman to perform experiments near Zone 5KM6NF at Minmus's Lowlands.
+			completedMessage = Wernher is very pleased, he wouldn't have been able to attend the Rocketologist's gala if something had gone wrong!
+			hash = -158020673
+			targetBody = Minmus
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.WaypointGenerator
+				WAYPOINT
+				{
+					type = RANDOM_WAYPOINT
+					celestialName = Minmus
+					name = Zone 5KM6NF
+					icon = ContractPacks/FieldResearch/Icons/research
+					latitude = -39.821766724098623
+					longitude = 118.38163088000454
+					altitude = 0
+					index = 0
+					hidden = False
+					clustered = False
+					randomAltitude = False
+					underwater = False
+				}
+			}
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.SpawnPassengers
+				count = 1
+				KERBAL
+				{
+					name = Eilhat Kerman
+					gender = Female
+					experienceTrait = Scientist
+					kerbalType = Crew
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VPG
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_Scientist
+				title = Bring Eilhat Kerman to the waypoint
+				notes = 
+				completedMessage = 
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = HasCrew
+					id = HasCrew
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Scientist
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					trait = Pilot
+					minCrew = 1
+					maxCrew = 2147483647
+					minExperience = 0
+					maxExperience = 5
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Trait: Pilot
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Scientist
+						title = Trait: Pilot
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = CountParameterDelegate`1
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Scientist
+						title = Count: At least 1
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = HasPassengers
+					id = HasPassengers
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Scientist
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					index = 0
+					count = 0
+				}
+				PARAM
+				{
+					name = VisitWaypoint
+					id = VisitWaypoint
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Scientist
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					distance = 0
+					horizontalDistance = 0
+					waypointIndex = 0
+					hideOnCompletion = False
+					showMessages = True
+				}
+				PARAM
+				{
+					name = CollectScienceCustom
+					id = CollectScience
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Scientist
+					title = Perform the experiments at the waypoint
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					allowStateReset = False
+					targetBody = Minmus
+					biome = Lowlands
+					situation = SrfLanded
+					experiment = mobileMaterialsLab
+					experiment = temperatureScan
+					experiment = barometerScan
+					recoveryMethod = None
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Biome: Minmus's Lowlands
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Scientist
+						title = Biome: Minmus's Lowlands
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Landed
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Scientist
+						title = Situation: Landed
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Experiment: Materials Study
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Scientist
+						title = Experiment: Materials Study
+						notes = 
+						completedMessage = 
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = mobileMaterialsLabSubject
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = FieldResearch.FS_Scientist
+							title = 
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Experiment: Temperature Scan
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Scientist
+						title = Experiment: Temperature Scan
+						notes = 
+						completedMessage = 
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = temperatureScanSubject
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = FieldResearch.FS_Scientist
+							title = 
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Experiment: Atmospheric Pressure Scan
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Scientist
+						title = Experiment: Atmospheric Pressure Scan
+						notes = 
+						completedMessage = 
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = barometerScanSubject
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = FieldResearch.FS_Scientist
+							title = 
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+			}
+			PARAM
+			{
+				name = RecoverKerbalCustom
+				id = RecoverKerbal
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_Scientist
+				title = 
+				notes = 
+				completedMessage = 
+				completeInSequence = True
+				count = 0
+				index = 0
+			}
+		}
+		CONTRACT
+		{
+			guid = faa33f58-95d2-4fd4-a502-31daf9878852
+			type = ConfiguredContract
+			prestige = 1
+			seed = 124301611
+			state = Offered
+			viewed = Read
+			agent = Field Research Team
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 2097960,0,0,17149,0,0,4,0,22220073.1660841,0,0,0
+			subtype = FS_Experiment
+			title = Perform Temperature scan experiments on Minmus
+			description = Wernher is especially excited to try some temperature scan experiments at various locations on Minmus.  We doubt the results will be much different from the last study Wernher commissioned...  but he's the boss!
+			synopsis = Run the temperature scan experiments on Minmus.
+			completedMessage = Yup, that's definitely a lot of temperature scan results.  Just put the data in a spreadsheet and we'll look at it later.
+			hash = 1723975082
+			targetBody = Minmus
+			UNIQUE_DATA
+			{
+				experiment = ScienceExperiment:temperatureScan
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 9714,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_Experiment
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Minmus
+				biome = Highlands
+				situation = SrfLanded
+				experiment = temperatureScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Minmus's Highlands
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Biome: Minmus's Highlands
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Temperature Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Experiment: Temperature Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = temperatureScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = Recovery: Recover
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 8208,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_Experiment
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Minmus
+				biome = GreatFlats
+				situation = SrfLanded
+				experiment = temperatureScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Minmus's Great Flats
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Biome: Minmus's Great Flats
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Temperature Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Experiment: Temperature Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = temperatureScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = Recovery: Recover
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 10685,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_Experiment
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Minmus
+				biome = Poles
+				situation = SrfLanded
+				experiment = temperatureScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Minmus's Poles
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Biome: Minmus's Poles
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Temperature Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Experiment: Temperature Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = temperatureScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = Recovery: Recover
+						notes = 
+						completedMessage = 
+					}
+				}
 			}
 		}
 		CONTRACT
@@ -14955,7 +15486,7 @@ GAME
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = Tourism.Tourism_SubOrbital
-						title = Count: At least 1 
+						title = Count: At least 1
 						notes = 
 						completedMessage = 
 					}
@@ -15468,7 +15999,7 @@ GAME
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = Tourism.Tourism_GasGiantMoons
-						title = Count: At least 1 
+						title = Count: At least 1
 						notes = 
 						completedMessage = 
 					}
@@ -15697,6 +16228,372 @@ GAME
 				completeInSequence = True
 				count = 0
 				index = 0
+			}
+		}
+		CONTRACT
+		{
+			guid = 7da329de-3eb5-48ea-b6c9-c7feb7890627
+			type = ConfiguredContract
+			prestige = 0
+			seed = 1039843834
+			state = Offered
+			viewed = Unseen
+			agent = Experimental Engineering Group
+			deadlineType = Floating
+			expiryType = Floating
+			ignoresWeight = True
+			values = 195240,7281387.81738281,19993,58429,99557,0,5,9,20978785.9706865,0,0,0
+			subtype = SAB_Homeworld_Child_Relay_Tier1
+			title = Launch a tier 1 relay around Minmus.
+			description = While cleaning up after an unintended ignition, one of the overworked teams at Experimental Engineering Group raised an interesting question. We may have underestimated just how volatile solid rocket fuel really is, and have now found ourselves with a problem we can't solve on our own. This is why we're here.
+			synopsis = We want you to build a new relay satellite with at least 4 G power (such as the HG-5R or HG-55R antenna) and place it into stationary orbit around Minmus.
+			completedMessage = Success! The relay satellite is up and running around Minmus.
+			notes = Please note that this must be a new relay satellite, constructed after the contract is accepted.
+			hash = -1505786154
+			targetBody = Minmus
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.OrbitGenerator
+				ORBIT_DETAIL
+				{
+					type = RANDOM_ORBIT
+					ORBIT
+					{
+						SMA = 855254.09224944073
+						ECC = 0.27515978570953581
+						INC = 178.92641373859999
+						LPE = 137.58233853503233
+						LAN = 63.055256485499115
+						MNA = -0.79012725937812611
+						EPH = 0
+						REF = 3
+					}
+				}
+			}
+			PARAM
+			{
+				name = AlwaysTrue
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = MyVesselParameterGroup
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+				title = Place satellite into a stable orbit for 15 days
+				notes = 
+				completedMessage = 
+				duration = 324000
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = True
+				PARAM
+				{
+					name = NewVessel
+					id = NewVessel
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+					title = Launch a new relay satellite
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					launchID = 0
+				}
+				PARAM
+				{
+					name = HasResource
+					id = HasResourceCapacityEC
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+					title = Have at least 1200 electric charge (EC) storage
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					capacity = True
+					RESOURCE
+					{
+						resource = ElectricCharge
+						minQuantity = 1200
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Resource Capacity: ElectricCharge: At least 1200 units
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+						title = Resource Capacity: ElectricCharge: At least 1200 units
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = VesselIsType
+					id = VesselIsType
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					vesselType = Relay
+				}
+				PARAM
+				{
+					name = PartValidation
+					id = PartValidationSAS
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					minCount = 1
+					maxCount = 2147483647
+					FILTER
+					{
+						type = FILTER
+						partModule = ModuleSAS
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = With module: SAS
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+						title = With module: SAS
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = CountParameterDelegate`1
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+						title = Count: At least 1
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = PartValidation
+					id = PartValidationCommand
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					minCount = 1
+					maxCount = 2147483647
+					FILTER
+					{
+						type = FILTER
+						partModule = ModuleCommand
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = With module: Command
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+						title = With module: Command
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = CountParameterDelegate`1
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+						title = Count: At least 1
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = HasAntenna
+					id = AntennaRelayPower
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+					title = Have at least 4 G (combined) relay antenna power
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					minAntennaPower = 4000000000
+					antennaType = RELAY
+				}
+				PARAM
+				{
+					name = HasResource
+					id = HasResourceEC
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+					title = Maintain at least 120 electric charge
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					capacity = False
+					RESOURCE
+					{
+						resource = ElectricCharge
+						minQuantity = 120
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Resource: ElectricCharge: At least 120 units
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+						title = Resource: ElectricCharge: At least 120 units
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = OrbitParameter
+					id = ReachSpecificOrbit0
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					situation = 0
+					targetBody = Minmus
+					minAltitude = 0
+					minApoapsis = 0
+					minPeriapsis = 0
+					minEccentricity = 0
+					minInclination = 0
+					maxInclination = 180
+					minArgumentOfPeriapsis = 0
+					maxArgumentOfPeriapsis = 0
+					minPeriod = 0
+					displayNotes = True
+					deviationWindow = 0.40000000000000002
+					ORBIT
+					{
+						SMA = 855254.09224944073
+						ECC = 0.27515978570953581
+						INC = 178.92641373859999
+						LPE = 137.58233853503233
+						LAN = 63.055256485499115
+						MNA = -0.79012725937812611
+						EPH = 0
+						REF = 3
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Minmus
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+						title = Destination: Minmus
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Reach the specified orbit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+						title = Reach the specified orbit
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+					title = Must not be under acceleration
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Minmus
+					maxAcceleration = 0.200000003
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Minmus
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+						title = Destination: Minmus
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Acceleration: Less than 0.2 gees
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+						title = Acceleration: Less than 0.2 gees
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Duration: 15 days
+					optional = True
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
+					title = Duration: 15 days
+					notes = 
+					completedMessage = 
+				}
 			}
 		}
 		CONTRACT
@@ -16021,759 +16918,160 @@ GAME
 		}
 		CONTRACT
 		{
-			guid = 42e912aa-ce9f-411a-b241-2da16965ee61
-			type = ConfiguredContract
-			prestige = 2
-			seed = 2114501696
-			state = Offered
-			viewed = Unseen
-			agent = Field Research Team
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 1054320,0,0,97963,0,0,17,0,21971584.3313489,0,0,0
-			subtype = FS_Scientist
-			title = Help a scientist perform experiments at The Mun's Midlands.
-			description = Renowned scientist Nathan Kerman would like to perform some experiments near a specific location at The Mun's Midlands.  Wernher has strongly suggested that this scientist should be treated with the utmost respect, as they are a prominent member of the Society of Rocketologists.
-			synopsis = Bring Nathan Kerman to perform experiments near Sector MLV-9Z at The Mun's Midlands.
-			completedMessage = Wernher is very pleased, he wouldn't have been able to attend the Rocketologist's gala if something had gone wrong!
-			hash = -158020673
-			targetBody = Mun
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.WaypointGenerator
-				WAYPOINT
-				{
-					type = RANDOM_WAYPOINT
-					celestialName = Mun
-					name = Sector MLV-9Z
-					icon = ContractPacks/FieldResearch/Icons/research
-					latitude = -19.303541524145565
-					longitude = 179.50274359411691
-					altitude = 0
-					index = 0
-					hidden = False
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-			}
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.SpawnPassengers
-				count = 1
-				KERBAL
-				{
-					name = Nathan Kerman
-					gender = Male
-					experienceTrait = Scientist
-					kerbalType = Crew
-				}
-			}
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = VPG
-				state = Incomplete
-				values = 0,0,0,0,0
-				ContractIdentifier = FieldResearch.FS_Scientist
-				title = Bring Nathan Kerman to the waypoint
-				notes = 
-				completedMessage = 
-				duration = 0
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = False
-				PARAM
-				{
-					name = HasCrew
-					id = HasCrew
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_Scientist
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					trait = Pilot
-					minCrew = 1
-					maxCrew = 2147483647
-					minExperience = 0
-					maxExperience = 5
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Trait: Pilot
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Trait: Pilot
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = CountParameterDelegate`1
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Count: At least 1 
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = HasPassengers
-					id = HasPassengers
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_Scientist
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					index = 0
-					count = 0
-				}
-				PARAM
-				{
-					name = VisitWaypoint
-					id = VisitWaypoint
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_Scientist
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					distance = 0
-					horizontalDistance = 0
-					waypointIndex = 0
-					hideOnCompletion = False
-					showMessages = True
-				}
-				PARAM
-				{
-					name = CollectScienceCustom
-					id = CollectScience
-					state = Incomplete
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_Scientist
-					title = Perform the experiments at the waypoint
-					notes = 
-					completedMessage = 
-					completeInSequence = True
-					allowStateReset = False
-					targetBody = Mun
-					biome = Midlands
-					situation = SrfLanded
-					experiment = crewReport
-					experiment = mysteryGoo
-					experiment = temperatureScan
-					recoveryMethod = None
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Biome: The Mun's Midlands
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Biome: The Mun's Midlands
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Situation: Landed
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Situation: Landed
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Experiment: Crew Report
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Experiment: Crew Report
-						notes = 
-						completedMessage = 
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = crewReportSubject
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							title = 
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Experiment: Mystery Goo™ Observation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Experiment: Mystery Goo™ Observation
-						notes = 
-						completedMessage = 
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = mysteryGooSubject
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							title = 
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Experiment: Temperature Scan
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Experiment: Temperature Scan
-						notes = 
-						completedMessage = 
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = temperatureScanSubject
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							title = 
-							notes = 
-							completedMessage = 
-						}
-					}
-				}
-			}
-			PARAM
-			{
-				name = RecoverKerbalCustom
-				id = RecoverKerbal
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = FieldResearch.FS_Scientist
-				title = 
-				notes = 
-				completedMessage = 
-				completeInSequence = True
-				count = 0
-				index = 0
-			}
-		}
-		CONTRACT
-		{
-			guid = 2ef37098-cff9-40c7-a6c6-37b177808a1d
+			guid = 69c64d10-9fc3-42ef-b17f-ef7a2d2c8662
 			type = ConfiguredContract
 			prestige = 1
-			seed = 844743958
+			seed = 1899457669
 			state = Offered
 			viewed = Unseen
 			agent = Space Penguins, Inc
 			deadlineType = Floating
 			expiryType = Floating
 			ignoresWeight = True
-			values = 1912200,48241163.671875,23213,50300,77378,4,28,0,22829465.3713488,0,0,0
-			subtype = Targeted Unmanned Landing
-			title = Land a probe on the the Mun at a specified target!
-			description = The CEO (and chief bottle washer) at Space Penguins, Inc has stumbled on a problem. To test out some of our more advanced theories, we need more debris in low orbit. Now we need your help.
-			synopsis = Launch an unmanned probe and have it land on the the Mun
-			completedMessage = Future generations will remember this day.
+			values = 873000,39007358.7890625,19821,34029,66069,6,9,0,21740145.9706865,0,0,0
+			subtype = First Unmanned Flyby
+			title = Perform an unmanned Eve flyby mission.
+			description = The board of directors at Space Penguins, Inc have raised some troubling issues. We're not sure if there really is such a thing as too many struts, but we'd like to find out. So this is where you come in.
+			synopsis = Send a probe to space within the SOI of Eve
+			completedMessage = You did it! We've send a probe on a Eve flyby
 			notes = Complete the following:
-			hash = -989111454
-			targetBody = Mun
+			hash = 1896901532
+			targetBody = Eve
 			UNIQUE_DATA
 			{
-				uid = String:TargetedUnmannedLanding:Mun
-			}
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.WaypointGenerator
-				WAYPOINT
-				{
-					type = RANDOM_WAYPOINT
-					names = Impact Target
-					celestialName = Mun
-					name = Impact Target
-					icon = thermometer
-					latitude = -18.805929025802939
-					longitude = 70.401108567789692
-					altitude = 0
-					index = 0
-					hidden = False
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
+				uid = String:FirstUnmannedFlyby:Eve
 			}
 			PARAM
 			{
-				name = VesselParameterGroup
-				id = VPG__7
+				name = Sequence
+				id = Sequence_1
 				state = Incomplete
 				values = 0,0,0,0,0
-				ContractIdentifier = STGUnmannedMissions.Targeted Unmanned Landing
-				title = 
+				ContractIdentifier = STGUnmannedMissions.First Unmanned Flyby
+				title = Flyby Eve
 				notes = 
 				completedMessage = 
-				duration = 0
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = False
+				failWhenCompleteOutOfOrder = False
 				PARAM
 				{
-					name = HasCrew
-					id = HasCrew_7
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = STGUnmannedMissions.Targeted Unmanned Landing
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					minCrew = 0
-					maxCrew = 0
-					minExperience = 0
-					maxExperience = 5
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Unmanned
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Unmanned
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = VisitWaypoint
-					id = VisitWaypoint_8
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = STGUnmannedMissions.Targeted Unmanned Landing
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					distance = 5000
-					horizontalDistance = 0
-					waypointIndex = 0
-					hideOnCompletion = True
-					showMessages = False
-				}
-				PARAM
-				{
-					name = ReachState
-					id = ReachState_7
+					name = VesselParameterGroup
+					id = VesselParameterGroup_1
 					state = Incomplete
 					values = 0,0,0,0,0
-					ContractIdentifier = STGUnmannedMissions.Targeted Unmanned Landing
+					ContractIdentifier = STGUnmannedMissions.First Unmanned Flyby
 					title = 
 					notes = 
 					completedMessage = 
 					completeInSequence = True
-					allowStateReset = False
-					targetBody = Mun
-					situation = LANDED
+					duration = 0
+					dissassociateVesselsOnContractFailure = True
+					dissassociateVesselsOnContractCompletion = False
 					PARAM
 					{
-						name = ParameterDelegate`1
-						id = Destination: The Mun
+						name = HasCrew
+						id = HasCrew_1
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
-						title = Destination: The Mun
+						ContractIdentifier = STGUnmannedMissions.First Unmanned Flyby
+						title = 
 						notes = 
 						completedMessage = 
+						allowStateReset = True
+						minCrew = 0
+						maxCrew = 0
+						minExperience = 0
+						maxExperience = 5
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Unmanned
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = STGUnmannedMissions.First Unmanned Flyby
+							title = Unmanned
+							notes = 
+							completedMessage = 
+						}
 					}
 					PARAM
 					{
-						name = ParameterDelegate`1
-						id = Situation: Landed
+						name = ReachState
+						id = ReachState_1
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
-						title = Situation: Landed
+						ContractIdentifier = STGUnmannedMissions.First Unmanned Flyby
+						title = 
 						notes = 
 						completedMessage = 
-					}
-				}
-			}
-		}
-		CONTRACT
-		{
-			guid = 5e5c0923-36e3-48f8-a925-d5ad6897c001
-			type = ConfiguredContract
-			prestige = 0
-			seed = 1519403970
-			state = Offered
-			viewed = Unseen
-			agent = Probodobodyne Inc
-			deadlineType = Floating
-			expiryType = Floating
-			ignoresWeight = True
-			values = 175680,4337987.36572266,21775,60281,109348,0,7,8,21092946.5113488,0,0,0
-			subtype = SAB_Homeworld_Child_Relay_Tier1
-			title = Launch a tier 1 relay around Minmus.
-			description = The board of directors at Probodobodyne Inc have raised some troubling issues. To test out some of our more advanced theories, we need more debris in low orbit. We believe that you are much better positioned to deal with this than us.
-			synopsis = We want you to build a new relay satellite with at least 4 G power (such as the HG-5R or HG-55R antenna) and place it into stationary orbit around Minmus.
-			completedMessage = Success! The relay satellite is up and running around Minmus.
-			notes = Please note that this must be a new relay satellite, constructed after the contract is accepted.
-			hash = -1505786154
-			targetBody = Minmus
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.OrbitGenerator
-				ORBIT_DETAIL
-				{
-					type = RANDOM_ORBIT
-					ORBIT
-					{
-						SMA = 1345386.7141759307
-						ECC = 0.11585426270508552
-						INC = 175.32688953230482
-						LPE = 5.2030288452299143
-						LAN = 101.35528580348716
-						MNA = 1.6103081178831451
-						EPH = 0
-						REF = 3
-					}
-				}
-			}
-			PARAM
-			{
-				name = AlwaysTrue
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-			}
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = MyVesselParameterGroup
-				state = Incomplete
-				values = 0,0,0,0,0
-				ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
-				title = Place satellite into a stable orbit for 15 days
-				notes = 
-				completedMessage = 
-				duration = 324000
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = True
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Duration: 15 days
-					optional = True
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Duration: 15 days
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = NewVessel
-					id = NewVessel
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
-					title = Launch a new relay satellite
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					launchID = 0
-				}
-				PARAM
-				{
-					name = HasResource
-					id = HasResourceCapacityEC
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
-					title = Have at least 1200 electric charge (EC) storage
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					capacity = True
-					RESOURCE
-					{
-						resource = ElectricCharge
-						minQuantity = 1200
+						allowStateReset = True
+						targetBody = Eve
+						maxAltitude = 500000
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: Eve
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = STGUnmannedMissions.First Unmanned Flyby
+							title = Destination: Eve
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Altitude: Below 500,000 m
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = STGUnmannedMissions.First Unmanned Flyby
+							title = Altitude: Below 500,000 m
+							notes = 
+							completedMessage = 
+						}
 					}
 					PARAM
 					{
-						name = ParameterDelegate`1
-						id = Resource Capacity: ElectricCharge: At least 1200 units
+						name = ReachState
+						id = ReachState_Escaping_1
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
-						title = Resource Capacity: ElectricCharge: At least 1200 units
+						ContractIdentifier = STGUnmannedMissions.First Unmanned Flyby
+						title = 
 						notes = 
 						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = VesselIsType
-					id = VesselIsType
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					vesselType = Relay
-				}
-				PARAM
-				{
-					name = PartValidation
-					id = PartValidationSAS
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					minCount = 1
-					maxCount = 2147483647
-					FILTER
-					{
-						type = FILTER
-						partModule = ModuleSAS
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = With module: SAS
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = With module: SAS
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = CountParameterDelegate`1
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Count: At least 1 
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = PartValidation
-					id = PartValidationCommand
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					minCount = 1
-					maxCount = 2147483647
-					FILTER
-					{
-						type = FILTER
-						partModule = ModuleCommand
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = With module: Command
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = With module: Command
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = CountParameterDelegate`1
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Count: At least 1 
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = HasAntenna
-					id = AntennaRelayPower
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
-					title = Have at least 4 G (combined) relay antenna power
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					minAntennaPower = 4000000000
-					antennaType = RELAY
-				}
-				PARAM
-				{
-					name = HasResource
-					id = HasResourceEC
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
-					title = Maintain at least 120 electric charge
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					capacity = False
-					RESOURCE
-					{
-						resource = ElectricCharge
-						minQuantity = 120
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Resource: ElectricCharge: At least 120 units
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Resource: ElectricCharge: At least 120 units
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = OrbitParameter
-					id = ReachSpecificOrbit0
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					situation = 0
-					targetBody = Minmus
-					minAltitude = 0
-					minApoapsis = 0
-					minPeriapsis = 0
-					minEccentricity = 0
-					minInclination = 0
-					maxInclination = 180
-					minArgumentOfPeriapsis = 0
-					maxArgumentOfPeriapsis = 0
-					minPeriod = 0
-					displayNotes = True
-					deviationWindow = 0.40000000000000002
-					ORBIT
-					{
-						SMA = 1345386.7141759307
-						ECC = 0.11585426270508552
-						INC = 175.32688953230482
-						LPE = 5.2030288452299143
-						LAN = 101.35528580348716
-						MNA = 1.6103081178831451
-						EPH = 0
-						REF = 3
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: Minmus
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Destination: Minmus
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Reach the specified orbit
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Reach the specified orbit
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = ReachState
-					id = ReachState
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = StockAntennaBalance.SAB_Homeworld_Child_Relay_Tier1
-					title = Must not be under acceleration
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					targetBody = Minmus
-					maxAcceleration = 0.200000003
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: Minmus
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Destination: Minmus
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Acceleration: Less than 0.2 gees
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Acceleration: Less than 0.2 gees
-						notes = 
-						completedMessage = 
+						allowStateReset = True
+						targetBody = Eve
+						situation = ESCAPING
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: Eve
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = STGUnmannedMissions.First Unmanned Flyby
+							title = Destination: Eve
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Escape trajectory
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = STGUnmannedMissions.First Unmanned Flyby
+							title = Situation: Escape trajectory
+							notes = 
+							completedMessage = 
+						}
 					}
 				}
 			}
@@ -25834,7 +26132,7 @@ GAME
 					launchpadID = 0
 					id = SpaceCenter/ResearchAndDevelopment
 					commonName = ResearchAndDevelopment
-					progress = 12801809.40353886
+					progress = 12730663.588511573
 					BP = 14246052.084700515
 					cost = 902000
 					UpgradeProcessed = False
@@ -25847,7 +26145,7 @@ GAME
 					launchpadID = 0
 					id = SpaceCenter/SpaceplaneHangar
 					commonName = SpaceplaneHangar
-					progress = 9389607.0525637809
+					progress = 9318461.2375364937
 					BP = 10062305.898749053
 					cost = 450000
 					UpgradeProcessed = False
@@ -25984,9 +26282,9 @@ GAME
 					TargetObjectStorage = 
 					ContractGUIDStorage = 00000000-0000-0000-0000-000000000000
 					ContractAlarmType = Expire
-					Triggered = True
-					Actioned = True
-					AlarmWindowClosed = True
+					Triggered = False
+					Actioned = False
+					AlarmWindowClosed = False
 					Actions
 					{
 						Warp = DoNothing
@@ -26048,45 +26346,13 @@ GAME
 					TargetObjectStorage = 
 					ContractGUIDStorage = 00000000-0000-0000-0000-000000000000
 					ContractAlarmType = Expire
-					Triggered = True
-					Actioned = True
-					AlarmWindowClosed = False
-					Actions
-					{
-						Warp = KillWarp
-						Message = YesIfOtherVessel
-						DeleteWhenDone = False
-						PlaySound = False
-					}
-				}
-				Item
-				{
-					VesselID = 
-					ID = af3e85989cfb465680f5f6a1f480bc83
-					Name = [KAC] Kerbin->Dres
-					NotesStorage = 
-					TypeOfAlarm = TransferModelled
-					AlarmTimeStorage = 32432355
-					AlarmMarginSecs = 60
-					Enabled = True
-					AlarmAction = Converted
-					AlarmActionConverted = True
-					ManNodesStorage = 
-					XferOriginBodyName = Kerbin
-					XferTargetBodyName = Dres
-					RepeatAlarm = True
-					RepeatAlarmPeriodStorage = 0
-					PlaySound = False
-					TargetObjectStorage = 
-					ContractGUIDStorage = 00000000-0000-0000-0000-000000000000
-					ContractAlarmType = Expire
 					Triggered = False
 					Actioned = False
 					AlarmWindowClosed = False
 					Actions
 					{
-						Warp = DoNothing
-						Message = No
+						Warp = KillWarp
+						Message = YesIfOtherVessel
 						DeleteWhenDone = False
 						PlaySound = False
 					}
@@ -31914,10 +32180,15 @@ GAME
 			data = 11.1999998092651
 		}
 	}
+	SCENARIO
+	{
+		name = ScenarioDiscoverableObjects
+		scene = 7, 8, 5
+	}
 	FLIGHTSTATE
 	{
 		version = 1.3.0
-		UT = 20951139.110885676
+		UT = 20917260.13134896
 		activeVessel = 0
 		mapViewFiltering = 8190
 		commNetUIModeTracking = Network
@@ -42514,11 +42785,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 14.455900399714773
-				LPE = 90
-				LAN = 30.249374497930432
+				INC = 14.45590039971192
+				LPE = 90.000000000000014
+				LAN = 282.2005452298456
 				MNA = 0
-				EPH = 20917260.15134896
+				EPH = 20905134.671619985
 				REF = 3
 			}
 			PART
@@ -44157,13 +44428,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
-				ECC = 1
-				INC = 23.231063560806774
-				LPE = 90
-				LAN = 220.58090930354564
-				MNA = 0
-				EPH = 20917260.15134896
+				SMA = 30000.176042914703
+				ECC = 0.99999999999999989
+				INC = 23.231063560805609
+				LPE = 90.000000000000014
+				LAN = 112.53208003546337
+				MNA = 3.1415926207170166
+				EPH = 20905134.671619985
 				REF = 3
 			}
 			PART
@@ -44326,11 +44597,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 3.220107739307227
+				INC = 3.220107739312323
 				LPE = 270
-				LAN = 116.90367543864699
+				LAN = 8.8548461705655654
 				MNA = 0
-				EPH = 20917260.15134896
+				EPH = 20905134.671619985
 				REF = 3
 			}
 			PART
@@ -46752,13 +47023,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
-				INC = 12.020921746289686
+				INC = 12.020921746289808
 				LPE = 270
-				LAN = 173.67952957005684
+				LAN = 142.2718792282094
 				MNA = 0
-				EPH = 20917260.15134896
+				EPH = 20905134.671619985
 				REF = 2
 			}
 			PART
@@ -61291,13 +61562,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 30000.160003063582
+				SMA = 30000.160003064746
 				ECC = 0.99999999999999989
-				INC = 6.173402290242584
+				INC = 6.1734022902419925
 				LPE = 270
-				LAN = 47.697281002829527
+				LAN = 299.64845173474657
 				MNA = 3.1415926207170166
-				EPH = 20917260.15134896
+				EPH = 20905134.671619985
 				REF = 3
 			}
 			PART
@@ -70743,9 +71014,5 @@ GAME
 				flight = 0
 			}
 		}
-	}
-	MESSAGESYSTEM
-	{
-		flash = False
 	}
 }
